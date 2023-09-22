@@ -23,11 +23,31 @@ struct SampleWidjetEntryView : View {
 struct SampleWidjet: Widget {
 }
 ```
-###
 
 
+### １から自分で追加する（上の作業はしてあること前提で）
+1. 新しいフォルダを作る
+   - フォルダにSwiftのファイルを追加（名前はほにゃほにゃEntry）、Targetはプロジェクトではなく、導入ので作ったウィジェットのエクステンションのみにチェックをいれる
+  - フォルダにSwiftUIのファイルを追加（名前はほにゃほにゃView）、Targetは上と同じ
+  - フォルダにSwiftのファイルを追加（名前はほにゃほにゃTimelineProvider）、Targetは上と同じ
+  - フォルダにSwiftのファイルを追加（名前はほにゃほにゃHelloStaticWidget.swift）、Targetは上と同じ
+2. 必要なコードを書く
+3. Bundleに追加する
 
-2. 
+
+## memo
+- ユーザーが選択できるサイズを決めたい時
+  ```Swift
+  struct HelloStaticWidget: Widget {
+    var body: some WidgetConfiguration{
+        StaticConfiguration(kind: "amatnug.amatnug.WidjetTestProject", provider: HelloWidgetTimelineProvider()) { _ in
+            HelloWidjetView()
+        }
+        .supportedFamilies([.systemSmall])
+    }
+  }
+```
+
 3. 数字付きリスト3
 
 1. 数字付きリスト1

@@ -5,33 +5,34 @@
 //  Created by koala panda on 2023/09/21.
 //
 
+///このファイルはWidjetKitExtensionを選ぶと自動で作成されます
 import WidgetKit
 import SwiftUI
 
-// WidgetKit and SwiftUIのフレームワークをインポート
-import WidgetKit
-import SwiftUI
 
 ///1.
 /// タイムラインプロバイダ:ウィジェットを更新するために使用されるプロバイダー
 /// ウィジェットを更新するタイミングを取得し、プロバイダーからタイムラインを要求する
-/// タイムライン プロバイダーは基本的に、タイムライン エントリ プロトコルに準拠したタイムライン オブジェクトの配列を提供します。
+/// タイムライン プロバイダーは基本的に、タイムライン エントリ プロトコルに準拠したタイムライン オブジェクトの配列を提供する
+/// TimelineProviderは、先生のようなもの。先生は、授業の計画を作って、どの時間にどの授業をするかを決めます。TimelineProviderも同じで、ウィジェットの「授業計画」を作ります。つまり、どの時点でウィジェットが何を表示するかを決めてくれるんです。
 struct Provider: TimelineProvider {
     typealias Entry = SimpleEntry
     
-    /// ウィジェットのプレースホルダビューを提供するための関数。
+    /// 1-1ウィジェットのプレースホルダビューを提供するための関数。
     /// 基本的にローディング中の表示。
     func placeholder(in context: Context) -> SimpleEntry {
         SimpleEntry(date: Date())
     }
     
-    /// ウィジェットのスナップショット(瞬間の状態)を取得する関数
+    /// 1-2ウィジェットのスナップショット(瞬間の状態)を取得する関数
     func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
         let entry = SimpleEntry(date: Date())
         completion(entry)
     }
     
-    /// ウィジェット ビューで使用されるデータのソース
+    /// 1-3ウィジェット ビューで使用されるデータのソース
+    //3つのうち一番大切
+    //いつどのようにウィジェットを更新するか設定する
     //この例では、現在時刻から5時間後までのエントリを作成。
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         var entries: [SimpleEntry] = []
@@ -57,6 +58,7 @@ struct Provider: TimelineProvider {
 ///2.
 /// タイムラインエントリーはウィジェットを表示する日付を指定する
 /// ウィジェットに何を表示するかのデータ構造体
+/// TimelineEntryは、授業計画の中の一つ一つの授業の内容です。たとえば、「算数の時間には足し算を学ぶ」というのが一つの授業内容ですね。TimelineEntryも同じで、ウィジェットが表示する一つ一つの「内容」や「状態」を表します。
 struct SimpleEntry: TimelineEntry {
     let date: Date
     //relevence（オプション）はデフォルトのnilになってる
@@ -76,24 +78,29 @@ struct SampleWidjetEntryView : View {
     // ビューの本体部分。日付を時間形式で表示。
     var body: some View {
         Circle()
+            .padding()
 //        Text(entry.date, style: .time)
     }
 }
 
 
 ///4.
-/// ウィジェットの定義
-/// 説明を書く
+///Widgetプロトコルは上の構造体のバインディングを行う
 struct SampleWidjet: Widget {
+    //kindは現在のプロジェクトのコンテキスト内でウィジェットを一意に識別する文字列値
     let kind: String = "SampleWidjet"
     
-    // ウィジェットの設定。
+    // ウィジェットの設定をする部分
     var body: some WidgetConfiguration {
+        //ユーザーが選んだものを表示させる時はここをIntentConfigrationに変更
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
+            // ここでentryを使用してSampleWidjetEntryViewを作成・設定
+            // entryはProviderから提供されたTimelineEntryのインスタンス
             SampleWidjetEntryView(entry: entry)
         }
-        // ウィジェットの名前と説明。
+        // ウィジェットの名前を設定
         .configurationDisplayName("My Widget")
+        // ウィジェットの説明を設定
         .description("This is an example widget.")
     }
 }
@@ -102,9 +109,15 @@ struct SampleWidjet: Widget {
 
 
 /// プレビュープロバイダ。デザイン時にInterface Builderでウィジェットの見た目をプレビューするためのもの。
+
 struct SampleWidjet_Previews: PreviewProvider {
     static var previews: some View {
+        //指定した日付のウィジェットを表示させる
         SampleWidjetEntryView(entry: SimpleEntry(date: Date()))
+        //familydでサイズを指定できる
             .previewContext(WidgetPreviewContext(family: .systemSmall))
+        SampleWidjetEntryView(entry: SimpleEntry(date: Date()))
+        //familydでサイズを指定できる
+            .previewContext(WidgetPreviewContext(family: .systemLarge))
     }
 }

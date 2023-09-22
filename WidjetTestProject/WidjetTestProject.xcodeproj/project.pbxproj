@@ -17,6 +17,10 @@
 		3B7ECEFD2ABC2D5400EBCF36 /* SampleWidjet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7ECEFC2ABC2D5400EBCF36 /* SampleWidjet.swift */; };
 		3B7ECEFF2ABC2D5600EBCF36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B7ECEFE2ABC2D5600EBCF36 /* Assets.xcassets */; };
 		3B7ECF032ABC2D5600EBCF36 /* SampleWidjetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3B7ECEF32ABC2D5400EBCF36 /* SampleWidjetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3B7ECF0B2ABD8FF400EBCF36 /* HelloWidjetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7ECF0A2ABD8FF300EBCF36 /* HelloWidjetEntry.swift */; };
+		3B7ECF0D2ABD917600EBCF36 /* HelloWidjetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7ECF0C2ABD917600EBCF36 /* HelloWidjetView.swift */; };
+		3B7ECF0F2ABD941600EBCF36 /* HelloWidjetTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7ECF0E2ABD941600EBCF36 /* HelloWidjetTimelineProvider.swift */; };
+		3B7ECF112ABDA83E00EBCF36 /* HelloStaticWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7ECF102ABDA83E00EBCF36 /* HelloStaticWidget.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,10 @@
 		3B7ECEFC2ABC2D5400EBCF36 /* SampleWidjet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleWidjet.swift; sourceTree = "<group>"; };
 		3B7ECEFE2ABC2D5600EBCF36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B7ECF002ABC2D5600EBCF36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B7ECF0A2ABD8FF300EBCF36 /* HelloWidjetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWidjetEntry.swift; sourceTree = "<group>"; };
+		3B7ECF0C2ABD917600EBCF36 /* HelloWidjetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWidjetView.swift; sourceTree = "<group>"; };
+		3B7ECF0E2ABD941600EBCF36 /* HelloWidjetTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWidjetTimelineProvider.swift; sourceTree = "<group>"; };
+		3B7ECF102ABDA83E00EBCF36 /* HelloStaticWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloStaticWidget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +91,7 @@
 			children = (
 				3B7ECEE02ABC2CA300EBCF36 /* WidjetTestProject */,
 				3B7ECEF92ABC2D5400EBCF36 /* SampleWidjet */,
+				3B7ECF092ABD8EAF00EBCF36 /* HelloStaticWidjet */,
 				3B7ECEF42ABC2D5400EBCF36 /* Frameworks */,
 				3B7ECEDF2ABC2CA300EBCF36 /* Products */,
 			);
@@ -134,6 +143,17 @@
 				3B7ECF002ABC2D5600EBCF36 /* Info.plist */,
 			);
 			path = SampleWidjet;
+			sourceTree = "<group>";
+		};
+		3B7ECF092ABD8EAF00EBCF36 /* HelloStaticWidjet */ = {
+			isa = PBXGroup;
+			children = (
+				3B7ECF0A2ABD8FF300EBCF36 /* HelloWidjetEntry.swift */,
+				3B7ECF0C2ABD917600EBCF36 /* HelloWidjetView.swift */,
+				3B7ECF0E2ABD941600EBCF36 /* HelloWidjetTimelineProvider.swift */,
+				3B7ECF102ABDA83E00EBCF36 /* HelloStaticWidget.swift */,
+			);
+			path = HelloStaticWidjet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,7 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B7ECF0B2ABD8FF400EBCF36 /* HelloWidjetEntry.swift in Sources */,
+				3B7ECF0F2ABD941600EBCF36 /* HelloWidjetTimelineProvider.swift in Sources */,
 				3B7ECEFD2ABC2D5400EBCF36 /* SampleWidjet.swift in Sources */,
+				3B7ECF0D2ABD917600EBCF36 /* HelloWidjetView.swift in Sources */,
+				3B7ECF112ABDA83E00EBCF36 /* HelloStaticWidget.swift in Sources */,
 				3B7ECEFB2ABC2D5400EBCF36 /* SampleWidjetBundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
