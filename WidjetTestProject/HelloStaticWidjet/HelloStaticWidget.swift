@@ -10,7 +10,7 @@ import WidgetKit
 
 struct HelloStaticWidget: Widget {
     var body: some WidgetConfiguration{
-        StaticConfiguration(kind: "amatnug.amatnug.WidjetTestProject", provider: HelloWidgetTimelineProvider()) { _ in
+        StaticConfiguration(kind: "amatnug.amatnug.HelloStaticWidget", provider: HelloWidgetTimelineProvider()) { _ in
             HelloWidjetView()
         }
         .supportedFamilies([.systemSmall])

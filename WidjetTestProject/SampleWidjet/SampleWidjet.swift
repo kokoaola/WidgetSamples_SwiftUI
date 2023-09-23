@@ -98,9 +98,9 @@ struct SampleWidjet: Widget {
             // entryはProviderから提供されたTimelineEntryのインスタンス
             SampleWidjetEntryView(entry: entry)
         }
-        // ウィジェットの名前を設定
+        // ウィジェットギャラリーで表示させる名前を設定
         .configurationDisplayName("My Widget")
-        // ウィジェットの説明を設定
+        // ウィジェット説明を設定
         .description("This is an example widget.")
     }
 }

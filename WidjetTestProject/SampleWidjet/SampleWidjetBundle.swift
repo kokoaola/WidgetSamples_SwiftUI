@@ -12,7 +12,8 @@ import SwiftUI
 struct SampleWidjetBundle: WidgetBundle {
     var body: some Widget {
         ///２種類のウィジェット（３サイズ）が選べるようになる
-        SampleWidjet()
+//        SampleWidjet()
         HelloStaticWidget()
+        TodayWidget()
     }
 }
