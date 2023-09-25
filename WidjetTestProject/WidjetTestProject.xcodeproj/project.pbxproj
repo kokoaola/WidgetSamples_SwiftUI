@@ -25,7 +25,6 @@
 		3B7ECF162ABDF1BB00EBCF36 /* TodayWidgetTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7ECF152ABDF1BB00EBCF36 /* TodayWidgetTimelineProvider.swift */; };
 		3B7ECF182ABF334800EBCF36 /* TodayWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7ECF172ABF334800EBCF36 /* TodayWidgetView.swift */; };
 		3B7ECF1A2ABF383F00EBCF36 /* TodayWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7ECF192ABF383F00EBCF36 /* TodayWidget.swift */; };
-
 		3BD197E92AC1E128005B9001 /* QuotesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD197E52AC1E127005B9001 /* QuotesService.swift */; };
 		3BD197EA2AC1E128005B9001 /* QuotesWidgetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD197E62AC1E128005B9001 /* QuotesWidgetEntry.swift */; };
 		3BD197EB2AC1E128005B9001 /* Qoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD197E72AC1E128005B9001 /* Qoutes.swift */; };
@@ -83,7 +82,6 @@
 		3BD197E72AC1E128005B9001 /* Qoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Qoutes.swift; sourceTree = "<group>"; };
 		3BD197E82AC1E128005B9001 /* QuotesTimelineProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesTimelineProvider.swift; sourceTree = "<group>"; };
 		3BD197EF2AC1E199005B9001 /* QuotesWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesWidgetView.swift; sourceTree = "<group>"; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,11 +108,10 @@
 			isa = PBXGroup;
 			children = (
 				3B7ECEE02ABC2CA300EBCF36 /* WidgetTestProject */,
-				3B7ECEF92ABC2D5400EBCF36 /* SampleWidget */,
+				3B7ECEF92ABC2D5400EBCF36 /* SampleWidjet */,
 				3B7ECF092ABD8EAF00EBCF36 /* HelloStaticWidget */,
 				3B7ECF122ABDD93600EBCF36 /* TodayWidget */,
 				3BD197E42AC1E105005B9001 /* Quotes */,
-
 				3B7ECEF42ABC2D5400EBCF36 /* Frameworks */,
 				3B7ECEDF2ABC2CA300EBCF36 /* Products */,
 			);
@@ -157,7 +154,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3B7ECEF92ABC2D5400EBCF36 /* SampleWidget */ = {
+		3B7ECEF92ABC2D5400EBCF36 /* SampleWidjet */ = {
 			isa = PBXGroup;
 			children = (
 				3B7ECEFA2ABC2D5400EBCF36 /* SampleWidgetBundle.swift */,
@@ -165,7 +162,7 @@
 				3B7ECEFE2ABC2D5600EBCF36 /* Assets.xcassets */,
 				3B7ECF002ABC2D5600EBCF36 /* Info.plist */,
 			);
-			path = SampleWidget;
+			path = SampleWidjet;
 			sourceTree = "<group>";
 		};
 		3B7ECF092ABD8EAF00EBCF36 /* HelloStaticWidget */ = {
@@ -190,7 +187,6 @@
 			path = TodayWidget;
 			sourceTree = "<group>";
 		};
-
 		3BD197E42AC1E105005B9001 /* Quotes */ = {
 			isa = PBXGroup;
 			children = (
@@ -317,19 +313,17 @@
 				3BD197EA2AC1E128005B9001 /* QuotesWidgetEntry.swift in Sources */,
 				3BD197EC2AC1E128005B9001 /* QuotesTimelineProvider.swift in Sources */,
 				3B7ECF1A2ABF383F00EBCF36 /* TodayWidget.swift in Sources */,
-				3B802F462AC19E2000E97BE5 /* QuotesTimelineProvider.swift in Sources */,
 				3B7ECF0B2ABD8FF400EBCF36 /* HelloWidgetEntry.swift in Sources */,
 				3B7ECF162ABDF1BB00EBCF36 /* TodayWidgetTimelineProvider.swift in Sources */,
 				3BD197EB2AC1E128005B9001 /* Qoutes.swift in Sources */,
 				3B7ECF142ABDDEF200EBCF36 /* TodayWidgetEntry.swift in Sources */,
 				3BD197F02AC1E199005B9001 /* QuotesWidgetView.swift in Sources */,
-				3B7ECF0F2ABD941600EBCF36 /* HelloWidjetTimelineProvider.swift in Sources */,
-				3B7ECEFD2ABC2D5400EBCF36 /* SampleWidjet.swift in Sources */,
-				3B7ECF0D2ABD917600EBCF36 /* HelloWidjetView.swift in Sources */,
+				3B7ECF0F2ABD941600EBCF36 /* HelloWidgetTimelineProvider.swift in Sources */,
+				3B7ECEFD2ABC2D5400EBCF36 /* SampleWidget.swift in Sources */,
+				3B7ECF0D2ABD917600EBCF36 /* HelloWidgetView.swift in Sources */,
 				3B7ECF112ABDA83E00EBCF36 /* HelloStaticWidget.swift in Sources */,
 				3BD197E92AC1E128005B9001 /* QuotesService.swift in Sources */,
-				3B7ECEFB2ABC2D5400EBCF36 /* SampleWidjetBundle.swift in Sources */,
-
+				3B7ECEFB2ABC2D5400EBCF36 /* SampleWidgetBundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +388,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = SampleWidjet/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -448,6 +443,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = SampleWidjet/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -466,7 +462,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WidjetTestProject/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = SampleWidjet;
 				DEVELOPMENT_TEAM = 6CBTWMSXBM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -496,7 +492,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WidjetTestProject/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = SampleWidjet;
 				DEVELOPMENT_TEAM = 6CBTWMSXBM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
