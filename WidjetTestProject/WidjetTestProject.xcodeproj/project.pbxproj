@@ -7,24 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B7ECEE22ABC2CA300EBCF36 /* WidjetTestProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7ECEE12ABC2CA300EBCF36 /* WidjetTestProjectApp.swift */; };
+		3B7ECEE22ABC2CA300EBCF36 /* WidgetTestProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7ECEE12ABC2CA300EBCF36 /* WidgetTestProjectApp.swift */; };
 		3B7ECEE42ABC2CA300EBCF36 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7ECEE32ABC2CA300EBCF36 /* ContentView.swift */; };
 		3B7ECEE62ABC2CA400EBCF36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B7ECEE52ABC2CA400EBCF36 /* Assets.xcassets */; };
 		3B7ECEE92ABC2CA400EBCF36 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B7ECEE82ABC2CA400EBCF36 /* Preview Assets.xcassets */; };
 		3B7ECEF62ABC2D5400EBCF36 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7ECEF52ABC2D5400EBCF36 /* WidgetKit.framework */; };
 		3B7ECEF82ABC2D5400EBCF36 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7ECEF72ABC2D5400EBCF36 /* SwiftUI.framework */; };
-		3B7ECEFB2ABC2D5400EBCF36 /* SampleWidjetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7ECEFA2ABC2D5400EBCF36 /* SampleWidjetBundle.swift */; };
-		3B7ECEFD2ABC2D5400EBCF36 /* SampleWidjet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7ECEFC2ABC2D5400EBCF36 /* SampleWidjet.swift */; };
+		3B7ECEFB2ABC2D5400EBCF36 /* SampleWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7ECEFA2ABC2D5400EBCF36 /* SampleWidgetBundle.swift */; };
+		3B7ECEFD2ABC2D5400EBCF36 /* SampleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7ECEFC2ABC2D5400EBCF36 /* SampleWidget.swift */; };
 		3B7ECEFF2ABC2D5600EBCF36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B7ECEFE2ABC2D5600EBCF36 /* Assets.xcassets */; };
 		3B7ECF032ABC2D5600EBCF36 /* SampleWidjetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3B7ECEF32ABC2D5400EBCF36 /* SampleWidjetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		3B7ECF0B2ABD8FF400EBCF36 /* HelloWidjetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7ECF0A2ABD8FF300EBCF36 /* HelloWidjetEntry.swift */; };
-		3B7ECF0D2ABD917600EBCF36 /* HelloWidjetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7ECF0C2ABD917600EBCF36 /* HelloWidjetView.swift */; };
-		3B7ECF0F2ABD941600EBCF36 /* HelloWidjetTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7ECF0E2ABD941600EBCF36 /* HelloWidjetTimelineProvider.swift */; };
+		3B7ECF0B2ABD8FF400EBCF36 /* HelloWidgetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7ECF0A2ABD8FF300EBCF36 /* HelloWidgetEntry.swift */; };
+		3B7ECF0D2ABD917600EBCF36 /* HelloWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7ECF0C2ABD917600EBCF36 /* HelloWidgetView.swift */; };
+		3B7ECF0F2ABD941600EBCF36 /* HelloWidgetTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7ECF0E2ABD941600EBCF36 /* HelloWidgetTimelineProvider.swift */; };
 		3B7ECF112ABDA83E00EBCF36 /* HelloStaticWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7ECF102ABDA83E00EBCF36 /* HelloStaticWidget.swift */; };
 		3B7ECF142ABDDEF200EBCF36 /* TodayWidgetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7ECF132ABDDEF100EBCF36 /* TodayWidgetEntry.swift */; };
 		3B7ECF162ABDF1BB00EBCF36 /* TodayWidgetTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7ECF152ABDF1BB00EBCF36 /* TodayWidgetTimelineProvider.swift */; };
 		3B7ECF182ABF334800EBCF36 /* TodayWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7ECF172ABF334800EBCF36 /* TodayWidgetView.swift */; };
 		3B7ECF1A2ABF383F00EBCF36 /* TodayWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7ECF192ABF383F00EBCF36 /* TodayWidget.swift */; };
+		3B802F402AC18A4100E97BE5 /* Qoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B802F3F2AC18A4100E97BE5 /* Qoute.swift */; };
+		3B802F422AC198B800E97BE5 /* QuotesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B802F412AC198B800E97BE5 /* QuotesService.swift */; };
+		3B802F442AC19D9F00E97BE5 /* QuotesWidgetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B802F432AC19D9F00E97BE5 /* QuotesWidgetEntry.swift */; };
+		3B802F462AC19E2000E97BE5 /* QuotesTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B802F452AC19E2000E97BE5 /* QuotesTimelineProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,25 +57,29 @@
 
 /* Begin PBXFileReference section */
 		3B7ECEDE2ABC2CA300EBCF36 /* WidjetTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WidjetTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B7ECEE12ABC2CA300EBCF36 /* WidjetTestProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidjetTestProjectApp.swift; sourceTree = "<group>"; };
+		3B7ECEE12ABC2CA300EBCF36 /* WidgetTestProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetTestProjectApp.swift; sourceTree = "<group>"; };
 		3B7ECEE32ABC2CA300EBCF36 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3B7ECEE52ABC2CA400EBCF36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B7ECEE82ABC2CA400EBCF36 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3B7ECEF32ABC2D5400EBCF36 /* SampleWidjetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SampleWidjetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B7ECEF52ABC2D5400EBCF36 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		3B7ECEF72ABC2D5400EBCF36 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		3B7ECEFA2ABC2D5400EBCF36 /* SampleWidjetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleWidjetBundle.swift; sourceTree = "<group>"; };
-		3B7ECEFC2ABC2D5400EBCF36 /* SampleWidjet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleWidjet.swift; sourceTree = "<group>"; };
+		3B7ECEFA2ABC2D5400EBCF36 /* SampleWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleWidgetBundle.swift; sourceTree = "<group>"; };
+		3B7ECEFC2ABC2D5400EBCF36 /* SampleWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleWidget.swift; sourceTree = "<group>"; };
 		3B7ECEFE2ABC2D5600EBCF36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B7ECF002ABC2D5600EBCF36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3B7ECF0A2ABD8FF300EBCF36 /* HelloWidjetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWidjetEntry.swift; sourceTree = "<group>"; };
-		3B7ECF0C2ABD917600EBCF36 /* HelloWidjetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWidjetView.swift; sourceTree = "<group>"; };
-		3B7ECF0E2ABD941600EBCF36 /* HelloWidjetTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWidjetTimelineProvider.swift; sourceTree = "<group>"; };
+		3B7ECF0A2ABD8FF300EBCF36 /* HelloWidgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWidgetEntry.swift; sourceTree = "<group>"; };
+		3B7ECF0C2ABD917600EBCF36 /* HelloWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWidgetView.swift; sourceTree = "<group>"; };
+		3B7ECF0E2ABD941600EBCF36 /* HelloWidgetTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWidgetTimelineProvider.swift; sourceTree = "<group>"; };
 		3B7ECF102ABDA83E00EBCF36 /* HelloStaticWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloStaticWidget.swift; sourceTree = "<group>"; };
 		3B7ECF132ABDDEF100EBCF36 /* TodayWidgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWidgetEntry.swift; sourceTree = "<group>"; };
 		3B7ECF152ABDF1BB00EBCF36 /* TodayWidgetTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWidgetTimelineProvider.swift; sourceTree = "<group>"; };
 		3B7ECF172ABF334800EBCF36 /* TodayWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWidgetView.swift; sourceTree = "<group>"; };
 		3B7ECF192ABF383F00EBCF36 /* TodayWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWidget.swift; sourceTree = "<group>"; };
+		3B802F3F2AC18A4100E97BE5 /* Qoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qoute.swift; sourceTree = "<group>"; };
+		3B802F412AC198B800E97BE5 /* QuotesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesService.swift; sourceTree = "<group>"; };
+		3B802F432AC19D9F00E97BE5 /* QuotesWidgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesWidgetEntry.swift; sourceTree = "<group>"; };
+		3B802F452AC19E2000E97BE5 /* QuotesTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesTimelineProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,10 +105,11 @@
 		3B7ECED52ABC2CA300EBCF36 = {
 			isa = PBXGroup;
 			children = (
-				3B7ECEE02ABC2CA300EBCF36 /* WidjetTestProject */,
-				3B7ECEF92ABC2D5400EBCF36 /* SampleWidjet */,
-				3B7ECF092ABD8EAF00EBCF36 /* HelloStaticWidjet */,
+				3B7ECEE02ABC2CA300EBCF36 /* WidgetTestProject */,
+				3B7ECEF92ABC2D5400EBCF36 /* SampleWidget */,
+				3B7ECF092ABD8EAF00EBCF36 /* HelloStaticWidget */,
 				3B7ECF122ABDD93600EBCF36 /* TodayWidget */,
+				3B802F3E2AC189EF00E97BE5 /* QuotesWidget */,
 				3B7ECEF42ABC2D5400EBCF36 /* Frameworks */,
 				3B7ECEDF2ABC2CA300EBCF36 /* Products */,
 			);
@@ -115,15 +124,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3B7ECEE02ABC2CA300EBCF36 /* WidjetTestProject */ = {
+		3B7ECEE02ABC2CA300EBCF36 /* WidgetTestProject */ = {
 			isa = PBXGroup;
 			children = (
-				3B7ECEE12ABC2CA300EBCF36 /* WidjetTestProjectApp.swift */,
+				3B7ECEE12ABC2CA300EBCF36 /* WidgetTestProjectApp.swift */,
 				3B7ECEE32ABC2CA300EBCF36 /* ContentView.swift */,
 				3B7ECEE52ABC2CA400EBCF36 /* Assets.xcassets */,
 				3B7ECEE72ABC2CA400EBCF36 /* Preview Content */,
 			);
-			path = WidjetTestProject;
+			path = WidgetTestProject;
 			sourceTree = "<group>";
 		};
 		3B7ECEE72ABC2CA400EBCF36 /* Preview Content */ = {
@@ -143,26 +152,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3B7ECEF92ABC2D5400EBCF36 /* SampleWidjet */ = {
+		3B7ECEF92ABC2D5400EBCF36 /* SampleWidget */ = {
 			isa = PBXGroup;
 			children = (
-				3B7ECEFA2ABC2D5400EBCF36 /* SampleWidjetBundle.swift */,
-				3B7ECEFC2ABC2D5400EBCF36 /* SampleWidjet.swift */,
+				3B7ECEFA2ABC2D5400EBCF36 /* SampleWidgetBundle.swift */,
+				3B7ECEFC2ABC2D5400EBCF36 /* SampleWidget.swift */,
 				3B7ECEFE2ABC2D5600EBCF36 /* Assets.xcassets */,
 				3B7ECF002ABC2D5600EBCF36 /* Info.plist */,
 			);
-			path = SampleWidjet;
+			path = SampleWidget;
 			sourceTree = "<group>";
 		};
-		3B7ECF092ABD8EAF00EBCF36 /* HelloStaticWidjet */ = {
+		3B7ECF092ABD8EAF00EBCF36 /* HelloStaticWidget */ = {
 			isa = PBXGroup;
 			children = (
-				3B7ECF0A2ABD8FF300EBCF36 /* HelloWidjetEntry.swift */,
-				3B7ECF0C2ABD917600EBCF36 /* HelloWidjetView.swift */,
-				3B7ECF0E2ABD941600EBCF36 /* HelloWidjetTimelineProvider.swift */,
+				3B7ECF0A2ABD8FF300EBCF36 /* HelloWidgetEntry.swift */,
+				3B7ECF0C2ABD917600EBCF36 /* HelloWidgetView.swift */,
+				3B7ECF0E2ABD941600EBCF36 /* HelloWidgetTimelineProvider.swift */,
 				3B7ECF102ABDA83E00EBCF36 /* HelloStaticWidget.swift */,
 			);
-			path = HelloStaticWidjet;
+			path = HelloStaticWidget;
 			sourceTree = "<group>";
 		};
 		3B7ECF122ABDD93600EBCF36 /* TodayWidget */ = {
@@ -174,6 +183,17 @@
 				3B7ECF192ABF383F00EBCF36 /* TodayWidget.swift */,
 			);
 			path = TodayWidget;
+			sourceTree = "<group>";
+		};
+		3B802F3E2AC189EF00E97BE5 /* QuotesWidget */ = {
+			isa = PBXGroup;
+			children = (
+				3B802F3F2AC18A4100E97BE5 /* Qoute.swift */,
+				3B802F412AC198B800E97BE5 /* QuotesService.swift */,
+				3B802F432AC19D9F00E97BE5 /* QuotesWidgetEntry.swift */,
+				3B802F452AC19E2000E97BE5 /* QuotesTimelineProvider.swift */,
+			);
+			path = QuotesWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,7 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B7ECEE42ABC2CA300EBCF36 /* ContentView.swift in Sources */,
-				3B7ECEE22ABC2CA300EBCF36 /* WidjetTestProjectApp.swift in Sources */,
+				3B7ECEE22ABC2CA300EBCF36 /* WidgetTestProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,14 +308,18 @@
 			files = (
 				3B7ECF182ABF334800EBCF36 /* TodayWidgetView.swift in Sources */,
 				3B7ECF1A2ABF383F00EBCF36 /* TodayWidget.swift in Sources */,
-				3B7ECF0B2ABD8FF400EBCF36 /* HelloWidjetEntry.swift in Sources */,
+				3B802F462AC19E2000E97BE5 /* QuotesTimelineProvider.swift in Sources */,
+				3B7ECF0B2ABD8FF400EBCF36 /* HelloWidgetEntry.swift in Sources */,
 				3B7ECF162ABDF1BB00EBCF36 /* TodayWidgetTimelineProvider.swift in Sources */,
+				3B802F442AC19D9F00E97BE5 /* QuotesWidgetEntry.swift in Sources */,
+				3B802F422AC198B800E97BE5 /* QuotesService.swift in Sources */,
+				3B802F402AC18A4100E97BE5 /* Qoute.swift in Sources */,
 				3B7ECF142ABDDEF200EBCF36 /* TodayWidgetEntry.swift in Sources */,
-				3B7ECF0F2ABD941600EBCF36 /* HelloWidjetTimelineProvider.swift in Sources */,
-				3B7ECEFD2ABC2D5400EBCF36 /* SampleWidjet.swift in Sources */,
-				3B7ECF0D2ABD917600EBCF36 /* HelloWidjetView.swift in Sources */,
+				3B7ECF0F2ABD941600EBCF36 /* HelloWidgetTimelineProvider.swift in Sources */,
+				3B7ECEFD2ABC2D5400EBCF36 /* SampleWidget.swift in Sources */,
+				3B7ECF0D2ABD917600EBCF36 /* HelloWidgetView.swift in Sources */,
 				3B7ECF112ABDA83E00EBCF36 /* HelloStaticWidget.swift in Sources */,
-				3B7ECEFB2ABC2D5400EBCF36 /* SampleWidjetBundle.swift in Sources */,
+				3B7ECEFB2ABC2D5400EBCF36 /* SampleWidgetBundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

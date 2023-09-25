@@ -6,7 +6,7 @@
 //
 
 import WidgetKit
-
+///今日の日付を表示するウィジェット
 struct TodayWidgetEntry: TimelineEntry{
     var date: Date
 }
