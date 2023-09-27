@@ -6,8 +6,11 @@
 //
 import Charts
 import SwiftUI
+
 ///ターゲットはエクステンションとプロジェクト両方
 ///グラフ用のビュー
+///
+
 struct WorkoutView: View {
     // サンプルのワークアウトデータをセット
     var workoutData = Workout.sample

@@ -54,6 +54,11 @@ struct SampleWidjet: Widget {
 
 3. Bundleに追加する
 
+### Appとデータの共有をさせる
+- プロジェクトのターゲット - signing& - +CapabilityからAppGroup(アプリ内の複数のターゲット間で通信とデータ共有をする)を検索してダブルクリック - AppGroupの＋から新しいグループを登録（バンドルID＋なにか）- SampleWidjetExtension.entitlementsとWidjetTestProject.entitlementsで一緒のAppGroupが選ばれていることを確認する
+- データモデルのSwiftファイルを作る(ターゲットはProjectのみ)
+
+
 
 ## memo
 - ユーザーが選択できるサイズを決めたい時
@@ -67,6 +72,8 @@ struct SampleWidjet: Widget {
     }
   }
 ```
+
+
 
 3. 数字付きリスト3
 
