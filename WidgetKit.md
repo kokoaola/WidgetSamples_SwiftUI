@@ -37,11 +37,21 @@ struct SampleWidjet: Widget {
 ### １から自分で追加する（上の作業はしてあること前提で）
 1. 新しいフォルダを作る(すべてTargetはプロジェクトではなく、導入ので作ったウィジェットのエクステンションのみにチェックをいれる)
 2. 作ったフォルダ内にファイルを作る
-   - Swiftのファイルを追加（名前はほにゃほにゃEntry）
-  - Swiftのファイルを追加（名前はほにゃほにゃTimelineProvider）
-  - SwiftUIのファイルを追加（名前はほにゃほにゃView）
-  - Swiftのファイルを追加（名前はほにゃほにゃHelloStaticWidget.swift）
-2. 必要なコードを書く
+    - タイムラインエントリー用のXXXEntry.swiftファイルを追加
+        1. XXXEntry構造体を作る
+        2. dateプロパティ必須、あとは好きなの作る
+    - タイムラインプロバイダー用のXXXTimelineProvider.swiftファイルを追加
+        1. typealiasでXXXEntryを設定
+        2. 必須関数３つスタブで実装
+           - サンプルコードを参照
+    - ウィジェットビュー用のXXXView.swiftファイルを追加（SwiftUI）
+        1. entryプロパティを受け取るようにする
+        2. ビューを書く
+        3. プレビューの設定をする
+            - プレビュー用のエントリーを作る
+            -  .previewContextを設定する
+    - Swiftのファイルを追加（名前はほにゃほにゃHelloStaticWidget.swift）
+
 3. Bundleに追加する
 
 

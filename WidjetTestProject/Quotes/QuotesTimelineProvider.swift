@@ -20,7 +20,7 @@ struct QuoteTimeLineProvider: TimelineProvider {
         QuotesWidgetEntry(date: Date(), quote: placeholderQuote)
     }
     
-    // クイックルック（3D Touchメニュー）で表示するエントリを生成
+    // クイックルック（ユーザーが選択するときのメニュー）で表示するエントリを生成
     func getSnapshot(in context: Context, completion: @escaping (QuotesWidgetEntry) -> Void) {
         completion(QuotesWidgetEntry(date: Date(), quote: placeholderQuote))
     }

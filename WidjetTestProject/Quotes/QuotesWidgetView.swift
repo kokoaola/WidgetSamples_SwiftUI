@@ -11,7 +11,21 @@ import WidgetKit
 struct QuotesWidgetView: View {
     var entry: QuotesWidgetEntry
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(spacing: 5){
+            Text(entry.quote.quoteText)
+                .minimumScaleFactor(0.7)
+            
+            HStack {
+                Spacer()
+                Text("-")
+                Text(entry.quote.quoteAuthor)
+                    .italic()
+            }
+            .font(.footnote)
+        }
+        .padding()
+        .frame(maxWidth: .infinity,maxHeight: .infinity)
+        .background(.orange.gradient.opacity(0.5))
     }
 }
 

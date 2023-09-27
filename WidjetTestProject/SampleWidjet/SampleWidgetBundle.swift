@@ -9,11 +9,14 @@ import WidgetKit
 import SwiftUI
 
 @main
+///プロジェクトで使用したいウィジェット構造体を指定する
 struct SampleWidjetBundle: WidgetBundle {
     var body: some Widget {
-        ///２種類のウィジェット（３サイズ）が選べるようになる
 //        SampleWidjet()
         HelloStaticWidget()
         TodayWidget()
+        QuotesWidget()
+        PhotoWidget()
+        WeatherWidget()
     }
 }
