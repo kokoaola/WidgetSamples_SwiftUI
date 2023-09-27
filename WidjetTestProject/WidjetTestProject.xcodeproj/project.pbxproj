@@ -51,6 +51,9 @@
 		3BD198182AC3D8A7005B9001 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD198162AC3D8A7005B9001 /* Workout.swift */; };
 		3BD1981D2AC3DA8B005B9001 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1981C2AC3DA8B005B9001 /* WorkoutView.swift */; };
 		3BD1981E2AC3DA8B005B9001 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1981C2AC3DA8B005B9001 /* WorkoutView.swift */; };
+		3BD198262AC3E747005B9001 /* WorkoutEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD198252AC3E747005B9001 /* WorkoutEntry.swift */; };
+		3BD198282AC3ED5F005B9001 /* WorkoutTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD198272AC3ED5F005B9001 /* WorkoutTimelineProvider.swift */; };
+		3BD1982B2AC3F09E005B9001 /* WorkoutWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1982A2AC3F09E005B9001 /* WorkoutWidget.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +125,9 @@
 		3BD198132AC32A3D005B9001 /* WeatherWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherWidget.swift; sourceTree = "<group>"; };
 		3BD198162AC3D8A7005B9001 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 		3BD1981C2AC3DA8B005B9001 /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
+		3BD198252AC3E747005B9001 /* WorkoutEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutEntry.swift; sourceTree = "<group>"; };
+		3BD198272AC3ED5F005B9001 /* WorkoutTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTimelineProvider.swift; sourceTree = "<group>"; };
+		3BD1982A2AC3F09E005B9001 /* WorkoutWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutWidget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,7 +160,7 @@
 				3BD197E42AC1E105005B9001 /* Quotes */,
 				3BD197F32AC2AC1B005B9001 /* PhotoWidget */,
 				3BD197FE2AC2D11B005B9001 /* WeatherWidget */,
-				3BD198152AC3D86E005B9001 /* WorkoutTracker */,
+				3BD198292AC3EFAE005B9001 /* WorkoutWidget */,
 				3B7ECEF42ABC2D5400EBCF36 /* Frameworks */,
 				3B7ECEDF2ABC2CA300EBCF36 /* Products */,
 			);
@@ -172,6 +178,7 @@
 		3B7ECEE02ABC2CA300EBCF36 /* WidgetTestProject */ = {
 			isa = PBXGroup;
 			children = (
+				3BD198152AC3D86E005B9001 /* WorkoutTracker */,
 				3B7ECEE12ABC2CA300EBCF36 /* WidgetTestProjectApp.swift */,
 				3B7ECEE32ABC2CA300EBCF36 /* ContentView.swift */,
 				3B7ECEE52ABC2CA400EBCF36 /* Assets.xcassets */,
@@ -280,6 +287,16 @@
 				3BD1981C2AC3DA8B005B9001 /* WorkoutView.swift */,
 			);
 			path = WorkoutTracker;
+			sourceTree = "<group>";
+		};
+		3BD198292AC3EFAE005B9001 /* WorkoutWidget */ = {
+			isa = PBXGroup;
+			children = (
+				3BD198272AC3ED5F005B9001 /* WorkoutTimelineProvider.swift */,
+				3BD198252AC3E747005B9001 /* WorkoutEntry.swift */,
+				3BD1982A2AC3F09E005B9001 /* WorkoutWidget.swift */,
+			);
+			path = WorkoutWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -396,6 +413,7 @@
 			files = (
 				3BD198122AC32153005B9001 /* WeatherWidgetView.swift in Sources */,
 				3BD197FB2AC2BCB5005B9001 /* PhotoWidgetTimelineProvider.swift in Sources */,
+				3BD198262AC3E747005B9001 /* WorkoutEntry.swift in Sources */,
 				3BD198142AC32A3E005B9001 /* WeatherWidget.swift in Sources */,
 				3B7ECF182ABF334800EBCF36 /* TodayWidgetView.swift in Sources */,
 				3BD197EA2AC1E128005B9001 /* QuotesWidgetEntry.swift in Sources */,
@@ -403,6 +421,7 @@
 				3B7ECF1A2ABF383F00EBCF36 /* TodayWidget.swift in Sources */,
 				3B7ECF0B2ABD8FF400EBCF36 /* HelloWidgetEntry.swift in Sources */,
 				3B7ECF162ABDF1BB00EBCF36 /* TodayWidgetTimelineProvider.swift in Sources */,
+				3BD1982B2AC3F09E005B9001 /* WorkoutWidget.swift in Sources */,
 				3BD197EB2AC1E128005B9001 /* Qoutes.swift in Sources */,
 				3B7ECF142ABDDEF200EBCF36 /* TodayWidgetEntry.swift in Sources */,
 				3BD197F02AC1E199005B9001 /* QuotesWidgetView.swift in Sources */,
@@ -423,6 +442,7 @@
 				3BD1981E2AC3DA8B005B9001 /* WorkoutView.swift in Sources */,
 				3BD197E92AC1E128005B9001 /* QuotesService.swift in Sources */,
 				3BD197F52AC2AC55005B9001 /* PhotoWidgetEntry.swift in Sources */,
+				3BD198282AC3ED5F005B9001 /* WorkoutTimelineProvider.swift in Sources */,
 				3BD197F22AC297B5005B9001 /* QuoteWidget.swift in Sources */,
 				3BD198062AC2D923005B9001 /* WeatherUtil.swift in Sources */,
 				3BD198022AC2D224005B9001 /* WeatherResponse.swift in Sources */,

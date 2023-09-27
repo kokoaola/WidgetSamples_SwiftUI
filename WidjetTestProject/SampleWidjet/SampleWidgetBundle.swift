@@ -18,5 +18,6 @@ struct SampleWidjetBundle: WidgetBundle {
         QuotesWidget()
         PhotoWidget()
         WeatherWidget()
+        WorkoutWidget()
     }
 }
