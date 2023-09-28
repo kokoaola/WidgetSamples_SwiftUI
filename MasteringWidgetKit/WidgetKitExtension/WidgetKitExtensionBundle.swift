@@ -11,13 +11,13 @@ import SwiftUI
 @main
 struct WidgetKitExtensionBundle: WidgetBundle {
     var body: some Widget {
-        HelloStaticWidget()
+        ColorWidget()
         TodayWidget()
         QuotesWidget()
         PhotoWidget()
         WeatherWidget()
         WorkoutWidget()
         ReminderWidget()
-        
+        HelloStaticWidget()
     }
 }

@@ -1,20 +1,26 @@
-# Mastering WidgetKit in SwiftUI 4, iOS 16 with Dynamic Island
+# Mastering WidgetKit in SwiftUI 4, iOS 16 with Dynamic Islandで作ったもの
 
-## 作ったもの
+## MasteringWidgetKitプロジェクト
 ### SampleWidjet
-    - 最初に作成するウィジェットの拡張機能。Bundleを持つ
+- 最初に作成するウィジェットの拡張機能。Bundleを持つ
 ### HelloStaticWidget
-    - HelloKoala!の文字をずっと表示させるウィジェット
+ - HelloKoala!の文字をずっと表示させるウィジェット
 ### TodayWidget
-    - 今日の日付を表示するウィジェット
+- 今日の日付を表示するウィジェット
 ### Quotes
-    - APIで有名人の言葉を表示させるウィジェット
+- APIで有名人の言葉を表示させるウィジェット
 ### PhotoWidget
-    - APIでランダムで画像を取得して表示させるウィジェット
+- APIでランダムで画像を取得して表示させるウィジェット
 ### WeatherWidget
-    - APIで天気予報を取得して表示させるウィジェット
+- APIで天気予報を取得して表示させるウィジェット
 ### WorkoutWidget
-    - App側とビューを共有してウィジェットに表示させる
+- App側とビューを共有してウィジェットに表示させる
 ### Reminder
-    - Appとウィジェット間のデータをUserdefaultsで共有する
-    
+- Appとウィジェット間のデータをUserdefaultsで共有する
+### ColorWidget
+- ユーザーが背景色を決められる動的ウィジェット
+
+
+
+## CoreDataAndWidgetプロジェクト
+- App側のコアデータと連動できるウィジェット（合計データ数を取得する）

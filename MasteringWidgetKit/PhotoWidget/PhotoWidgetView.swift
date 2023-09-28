@@ -16,7 +16,7 @@ struct PhotoWidgetView: View {
     
     var body: some View {
         let path = entry.imageUrl
-        
+
         NetworkImageView(url: URL(string: path)!)
             .scaledToFill()
     }

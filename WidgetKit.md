@@ -1,15 +1,7 @@
 # WidgetKit
 
-## 基礎知識
-
-- 「Timeline（タイムライン）」と「Entry（エントリー）」の違いを簡潔に説明すると：
-
-  - 「Entry（エントリー）」はウィジェットで表示する一つ一つのデータや情報の単位です。たとえば、天気予報ウィジェットの一つのエントリーは「今日の天気」が入ります。
-  - 「Timeline（タイムライン）」は、これから表示される複数の「Entry（エントリー）」を時系列に並べたものです。たとえば、天気予報ウィジェットのタイムラインには、「今日の天気」、「明日の天気」、「明後日の天気」などが順に並んでいて、時間が来るとウィジェットに表示されます
-
-
-## 導入方法
-1. プロジェクト選択してNew - Target - Widget Extension検索 - include configuration intentはオフ、live activityもオフ - 名前をつけてCreate - ウィジェットが作成されるのでXCode画面上部のスキームで切り替えて確認してみる
+## 最初の導入方法
+1. プロジェクト選択してFile - New - Target - Widget Extension - Next - include configuration intentとlive activityはチェックを外す - 名前をつけてCreate - 新しいグループ内にウィジェット用のファイルが追加される
 
 ## 4つの主要な構造体
 ```Swift
@@ -34,9 +26,9 @@ struct SampleWidjet: Widget {
 ```
 
 
-### １から自分で追加する（上の作業はしてあること前提で）
-1. 新しいフォルダを作る(すべてTargetはプロジェクトではなく、導入ので作ったウィジェットのエクステンションのみにチェックをいれる)
-2. 作ったフォルダ内にファイルを作る
+### ２つめ以降のウィジェットを１から自分で追加する（上の作業はしてあること前提で）
+1. 新しいフォルダを作る
+2. 作ったフォルダ内にファイルを作る(すべてTargetは導入手順で作ったウィジェットのエクステンションのみにチェックをいれる)
     - タイムラインエントリー用のXXXEntry.swiftファイルを追加
         1. XXXEntry構造体を作る
         2. dateプロパティ必須、あとは好きなの作る
@@ -50,17 +42,56 @@ struct SampleWidjet: Widget {
         3. プレビューの設定をする
             - プレビュー用のエントリーを作る
             -  .previewContextを設定する
-    - Swiftのファイルを追加（名前はほにゃほにゃHelloStaticWidget.swift）
+    - バインディング用のXXXXWidget.swiftファイルを追加
 
-3. Bundleに追加する
+3. 導入手順で自動作成されたBundleに追加する
 
 
 
-### Appとデータの共有をさせる
-- プロジェクトのターゲット - signing& - +CapabilityからAppGroup(アプリ内の複数のターゲット間で通信とデータ共有をする)を検索してダブルクリック - AppGroupの＋から新しいグループを登録（バンドルID＋なにか）- SampleWidjetExtension.entitlementsとWidjetTestProject.entitlementsで一緒のAppGroupが選ばれていることを確認する
+### UserDefaultsでAppとデータの共有をさせる（詳しくはReminder参照）
+- プロジェクトのターゲット - signing& - +CapabilityからAppGroup(アプリ内の複数のターゲット間で通信とデータ共有をする)を検索してダブルクリック - AppGroupの＋から新しいグループを登録（バンドルID＋なにか）- Extension.entitlementsとProject.entitlementsで一緒のAppGroupが選ばれていることを確認する
 - データモデルのSwiftファイルを作る(ターゲットはProjectのみ)
 - アプリとウィジェット作る（getTimeline関数のpolicyは.never）
 - XXXXAppConstants.swiftファイルを作る(この定数ファイルはアプリとウィジェット間で共有される)
+- userdefaultのsuitnameで共通のキーを使用することで値を共有できる
+
+
+
+### CoreDataでAppとデータの共有をさせる（詳しくはCoreDataAndWidgetプロジェクト参照）
+#### 最初の導入済ませる
+#### アプリコンテナとグループの作成
+- プロジェクトのTarget - signing& - +CapabilityからAppGroup(アプリ内の複数のターゲット間で通信とデータ共有をする)を検索してダブルクリック - AppGroupの＋から新しいグループを登録(バンドルID＋なにか) - ExtensionのTargetでもチェックを入れて同じグループを適用させる
+- 自動で作成されたExtension.entitlementsとProject.entitlementsで一緒のAppGroupが選ばれていることを確認する
+#### CoreData導入する
+- 新しいグループ作る - 新規作成 - data modelを検索して選択 - targetはプロジェクトとエクステンション両方にチェックマークを入れる（アプリとウィジェットの両方がアクセスできるように）- 名前をつけてCreate
+#### アプリグループを使用してメインソースであるコアデータSQLファイル (SQLite ファイル)を作成
+- 定数用のxxxxConstants.swiftファイルを作成（targetはプロジェクトとエクステンション）
+- SwiftファイルCoreDataManager.swiftを作成（targetはプロジェクトとエクステンション）、コンテキストを作成する(詳細はCoreDataAndWidgetApp.swift)
+- xxxxApp.swiftファイルの@mainですべてのサブビューにオブジェクト管理コンテキストを渡す
+#### データベースを構築する
+- Grocery.xcdatamodeldでEntityを作成 - Attributesを必要な分作成
+#### Appのビューを作る
+- xxxxView.swiftファイルを作る（targetはプロジェクトのみ）
+#### ウィジェット作る
+- 「２つめ以降のウィジェットを１から自分で追加する」の手順と同様
+- getTimelineメソッドにCoreDataのコードを挿入する
+
+
+### ユーザーにウィジェットの色をさせる（長押しで変更できる）
+#### 最初の導入済ませる
+#### xxxx.intentdefinitionファイルを作る
+- ファイルの新規作成 - Siri Kit Intentdefinition File - TargetはAppとExtension両方 - xxxx.intentdefinitionって名前で保存
+ - 生成されたファイルの左下の＋からNewEnum - xxxxを作成 - casesからユーザーに選択させるタイプを好きなだけ作る - DisplayNameは必要に応じて記入
+ - 左下の＋からNewIntent - xxxxIntentを作成 - CategoryをDo - Title(入力済み)とDescription
+(任意)を記入 - Intent is eligible for widgetにチェック(Siri 用ではなくウィジェット用に作成しているため)、それ以外をアンチェック 
+- parameter＋でコード中で使用する変数名を追加 - Type(型)を選択する(新しく作ったenumのカスタム型も使用可) - Siri can ask...をアンチェック - defaultの色を決める
+#### ウィジェット作る
+- 「２つめ以降のウィジェットを１から自分で追加する」の手順と同様
+- xxxxWidgetTimelineProvider.swiftはIntentTimelineProviderプロトコルに準拠することに注意、getTimelineメソッドも少し特殊(詳細はMasteringWidgetKit/ColorWidget/ColorWidgetTimelineProvider.swift参照)
+- WidgetファイルはIntentConfigurationを使用
+
+
+### ユーザーがウィジェットに表示されるコンテンツを選択して構成できる
 
 
 
