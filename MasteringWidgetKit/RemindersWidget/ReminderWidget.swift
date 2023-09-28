@@ -11,7 +11,7 @@ import WidgetKit
 
 struct ReminderWidget: Widget{
     var body: some WidgetConfiguration{
-        StaticConfiguration(kind: "amatnug.amatnug.MasteringReminderWidget", provider: ReminderTimelineProvider()) { entry in
+        StaticConfiguration(kind: ReminderAppConstants.widgetKind, provider: ReminderTimelineProvider()) { entry in
             ReminderWidgetView(count: entry.reminderCount)
         }
         .supportedFamilies([.systemSmall])

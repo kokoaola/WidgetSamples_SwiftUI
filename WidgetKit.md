@@ -54,9 +54,13 @@ struct SampleWidjet: Widget {
 
 3. Bundleに追加する
 
+
+
 ### Appとデータの共有をさせる
 - プロジェクトのターゲット - signing& - +CapabilityからAppGroup(アプリ内の複数のターゲット間で通信とデータ共有をする)を検索してダブルクリック - AppGroupの＋から新しいグループを登録（バンドルID＋なにか）- SampleWidjetExtension.entitlementsとWidjetTestProject.entitlementsで一緒のAppGroupが選ばれていることを確認する
 - データモデルのSwiftファイルを作る(ターゲットはProjectのみ)
+- アプリとウィジェット作る（getTimeline関数のpolicyは.never）
+- XXXXAppConstants.swiftファイルを作る(この定数ファイルはアプリとウィジェット間で共有される)
 
 
 

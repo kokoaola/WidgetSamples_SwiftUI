@@ -14,6 +14,10 @@ struct ReminderView: View {
     @State private var reminders = [Reminder]()
     @State private var newReminder = ""
     
+    ///共有用のユーザーデフォルト
+    @AppStorage(ReminderAppConstants.storageKey, store: UserDefaults(suiteName: ReminderAppConstants.appGroupName))
+    private var reminderStorage: Int = 0
+    
     var body: some View {
         NavigationStack{
             VStack{
@@ -37,6 +41,11 @@ struct ReminderView: View {
                             reminders.append(reminder)
                             
                             newReminder = ""
+                            
+                            ///ウィジェット表示用にタスク数をユーザーデフォルトに保存
+                            reminderStorage = reminders.count
+                            ReminderAppConstants.reloadReminderTimelines()
+                            print("reminderStrageは", reminderStorage)
                         }
                     }
                     .textFieldStyle(.roundedBorder)

@@ -17,7 +17,7 @@ struct WidgetKitExtensionBundle: WidgetBundle {
         PhotoWidget()
         WeatherWidget()
         WorkoutWidget()
-
+        ReminderWidget()
         
     }
 }

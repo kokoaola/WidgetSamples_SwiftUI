@@ -13,6 +13,7 @@
 		3B3C90172AC41BD90058BDDD /* ReminderWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90162AC41BD90058BDDD /* ReminderWidgetView.swift */; };
 		3B3C90192AC420450058BDDD /* ReminderTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90182AC420450058BDDD /* ReminderTimelineProvider.swift */; };
 		3B3C901B2AC421730058BDDD /* ReminderWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C901A2AC421730058BDDD /* ReminderWidget.swift */; };
+		3B3C901E2AC43CB70058BDDD /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4B52C02AC40F4E003388AD /* Reminder.swift */; };
 		3B4B52472AC40D59003388AD /* MasteringWidgetKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4B52462AC40D59003388AD /* MasteringWidgetKitApp.swift */; };
 		3B4B52492AC40D59003388AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4B52482AC40D59003388AD /* ContentView.swift */; };
 		3B4B524B2AC40D5A003388AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B524A2AC40D5A003388AD /* Assets.xcassets */; };
@@ -61,7 +62,6 @@
 		3B4B52BA2AC40ED2003388AD /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4B52B72AC40ED2003388AD /* WorkoutView.swift */; };
 		3B4B52BB2AC40ED2003388AD /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4B52B72AC40ED2003388AD /* WorkoutView.swift */; };
 		3B4B52C22AC40F4E003388AD /* ReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4B52BF2AC40F4E003388AD /* ReminderView.swift */; };
-		3B4B52C32AC40F4E003388AD /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4B52C02AC40F4E003388AD /* Reminder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -334,8 +334,8 @@
 		3B4B52BE2AC40F4E003388AD /* ReminderApp */ = {
 			isa = PBXGroup;
 			children = (
-				3B4B52BF2AC40F4E003388AD /* ReminderView.swift */,
 				3B4B52C02AC40F4E003388AD /* Reminder.swift */,
+				3B4B52BF2AC40F4E003388AD /* ReminderView.swift */,
 				3B3C900F2AC4177F0058BDDD /* ReminderAppConstants.swift */,
 			);
 			path = ReminderApp;
@@ -443,10 +443,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B3C90102AC4177F0058BDDD /* ReminderAppConstants.swift in Sources */,
+				3B3C901E2AC43CB70058BDDD /* Reminder.swift in Sources */,
 				3B4B52492AC40D59003388AD /* ContentView.swift in Sources */,
 				3B4B52C22AC40F4E003388AD /* ReminderView.swift in Sources */,
 				3B4B52472AC40D59003388AD /* MasteringWidgetKitApp.swift in Sources */,
-				3B4B52C32AC40F4E003388AD /* Reminder.swift in Sources */,
 				3B4B52BA2AC40ED2003388AD /* WorkoutView.swift in Sources */,
 				3B4B52B82AC40ED2003388AD /* Workout.swift in Sources */,
 			);

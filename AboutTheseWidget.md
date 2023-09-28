@@ -16,4 +16,5 @@
 ### WorkoutWidget
     - App側とビューを共有してウィジェットに表示させる
 ### Reminder
-    - UserdefaultでAppとウィジェット間のデータを共有する
+    - Appとウィジェット間のデータをUserdefaultsで共有する
+    
