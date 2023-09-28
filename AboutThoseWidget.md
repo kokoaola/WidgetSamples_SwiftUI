@@ -15,3 +15,5 @@
     - APIで天気予報を取得して表示させるウィジェット
 ### WorkoutWidget
     - App側とビューを共有してウィジェットに表示させる
+### Reminder
+    - UserdefaultでAppとウィジェット間のデータを共有する
