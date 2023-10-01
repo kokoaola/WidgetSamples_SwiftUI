@@ -13,3 +13,5 @@ struct Quote: Codable{
     //引用本文と著者名を格納する変数
     let quoteText, quoteAuthor: String
 }
+
+//入れ子になってる場合は中のもCodable

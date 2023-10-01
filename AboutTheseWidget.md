@@ -19,7 +19,10 @@
 - Appとウィジェット間のデータをUserdefaultsで共有する
 ### ColorWidget
 - ユーザーが背景色を決められる動的ウィジェット
-
+### ExpenseWidget
+- ゲージとユーザーが表示させるウィジェットの内容をを決められる動的ウィジェット
+### ExchangeRateWidget
+- ディープリンク（タップした時に表示させる内容を指定）
 
 
 ## CoreDataAndWidgetプロジェクト

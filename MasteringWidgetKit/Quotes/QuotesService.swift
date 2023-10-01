@@ -27,6 +27,7 @@ struct QuotesService{
         }
         
         // 取得したデータをQuoteオブジェクトにデコード
+        //入れ子になってる場合は[Quote].selfたぶん
         let quote = try JSONDecoder().decode(Quote.self, from: data)
         
         // デコードされたQuoteオブジェクトを返す

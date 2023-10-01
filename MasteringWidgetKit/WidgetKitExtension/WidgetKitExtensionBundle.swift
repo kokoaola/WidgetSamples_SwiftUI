@@ -11,6 +11,7 @@ import SwiftUI
 @main
 struct WidgetKitExtensionBundle: WidgetBundle {
     var body: some Widget {
+        ExpenseWidget()
         ColorWidget()
         TodayWidget()
         QuotesWidget()

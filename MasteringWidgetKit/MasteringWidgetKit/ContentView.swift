@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        ExchangeRateApp()
 //        VStack {
 //            Image(systemName: "globe")
 //                .imageScale(.large)
@@ -16,7 +17,20 @@ struct ContentView: View {
 //            Text("Hello, world!")
 //        }
 //        .padding()
-        ReminderView()
+//        ReminderView()
+//            .onAppear{
+                // asyncとawaitを使用した非同期呼び出しを行うためTaskブロックが必要
+//                Task{
+//                    do{
+//                        let exchangeRate = try await ExchangeRateService().getCurrentRate(from: Country.JAPAN.currencyCode)
+//                        print(Country.JAPAN.currencyCode)
+//                        print(exchangeRate.result)
+////                        print(exchangeRate.USD)
+//                    }catch{
+//                        print(error.localizedDescription)
+//                    }
+//                }
+//            }
     }
 }
 
