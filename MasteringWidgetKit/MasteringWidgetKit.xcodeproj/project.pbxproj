@@ -66,6 +66,11 @@
 		3B3C90DA2ACA78C30058BDDD /* PedometermManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90D82ACA78C30058BDDD /* PedometermManager.swift */; };
 		3B3C90DC2ACA7CDB0058BDDD /* PedometerAppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90DB2ACA7CDB0058BDDD /* PedometerAppConstants.swift */; };
 		3B3C90DD2ACA7CDB0058BDDD /* PedometerAppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90DB2ACA7CDB0058BDDD /* PedometerAppConstants.swift */; };
+		3B3C90DF2ACA7F8D0058BDDD /* PedometerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90DE2ACA7F8D0058BDDD /* PedometerView.swift */; };
+		3B3C90E32ACA84350058BDDD /* PedometerEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90E22ACA84350058BDDD /* PedometerEntry.swift */; };
+		3B3C90E52ACA84C10058BDDD /* PedometerEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90E42ACA84C10058BDDD /* PedometerEntryView.swift */; };
+		3B3C90E92ACA85E90058BDDD /* PedometerTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90E82ACA85E90058BDDD /* PedometerTimelineProvider.swift */; };
+		3B3C90EB2ACA86F30058BDDD /* PedometerWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90EA2ACA86F30058BDDD /* PedometerWidget.swift */; };
 		3B4B52472AC40D59003388AD /* MasteringWidgetKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4B52462AC40D59003388AD /* MasteringWidgetKitApp.swift */; };
 		3B4B52492AC40D59003388AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4B52482AC40D59003388AD /* ContentView.swift */; };
 		3B4B524B2AC40D5A003388AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B524A2AC40D5A003388AD /* Assets.xcassets */; };
@@ -192,6 +197,11 @@
 		3B3C90D52ACA765E0058BDDD /* Pedometer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pedometer.swift; sourceTree = "<group>"; };
 		3B3C90D82ACA78C30058BDDD /* PedometermManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometermManager.swift; sourceTree = "<group>"; };
 		3B3C90DB2ACA7CDB0058BDDD /* PedometerAppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerAppConstants.swift; sourceTree = "<group>"; };
+		3B3C90DE2ACA7F8D0058BDDD /* PedometerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerView.swift; sourceTree = "<group>"; };
+		3B3C90E22ACA84350058BDDD /* PedometerEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerEntry.swift; sourceTree = "<group>"; };
+		3B3C90E42ACA84C10058BDDD /* PedometerEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerEntryView.swift; sourceTree = "<group>"; };
+		3B3C90E82ACA85E90058BDDD /* PedometerTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerTimelineProvider.swift; sourceTree = "<group>"; };
+		3B3C90EA2ACA86F30058BDDD /* PedometerWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerWidget.swift; sourceTree = "<group>"; };
 		3B4B52432AC40D59003388AD /* MasteringWidgetKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasteringWidgetKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4B52462AC40D59003388AD /* MasteringWidgetKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasteringWidgetKitApp.swift; sourceTree = "<group>"; };
 		3B4B52482AC40D59003388AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -371,8 +381,20 @@
 				3B3C90D52ACA765E0058BDDD /* Pedometer.swift */,
 				3B3C90D82ACA78C30058BDDD /* PedometermManager.swift */,
 				3B3C90DB2ACA7CDB0058BDDD /* PedometerAppConstants.swift */,
+				3B3C90DE2ACA7F8D0058BDDD /* PedometerView.swift */,
 			);
 			path = Pedometer;
+			sourceTree = "<group>";
+		};
+		3B3C90E12ACA83FE0058BDDD /* PedometerWidget */ = {
+			isa = PBXGroup;
+			children = (
+				3B3C90E22ACA84350058BDDD /* PedometerEntry.swift */,
+				3B3C90E42ACA84C10058BDDD /* PedometerEntryView.swift */,
+				3B3C90E82ACA85E90058BDDD /* PedometerTimelineProvider.swift */,
+				3B3C90EA2ACA86F30058BDDD /* PedometerWidget.swift */,
+			);
+			path = PedometerWidget;
 			sourceTree = "<group>";
 		};
 		3B4B523A2AC40D59003388AD = {
@@ -393,6 +415,7 @@
 				3B3C908D2AC84BE10058BDDD /* ExchangeRateWidget */,
 				3B3C90B42AC9BEAF0058BDDD /* StocksWidget */,
 				3B3C90BF2AC9C5780058BDDD /* CustomStockIntent */,
+				3B3C90E12ACA83FE0058BDDD /* PedometerWidget */,
 				3B4B52592AC40DC7003388AD /* Frameworks */,
 				3B4B52442AC40D59003388AD /* Products */,
 			);
@@ -710,6 +733,7 @@
 				3B3C907E2AC5CFF10058BDDD /* Expense.intentdefinition in Sources */,
 				3B4B52BA2AC40ED2003388AD /* WorkoutView.swift in Sources */,
 				3B3C90922AC854840058BDDD /* ExchangeRate.swift in Sources */,
+				3B3C90DF2ACA7F8D0058BDDD /* PedometerView.swift in Sources */,
 				3B4B52B82AC40ED2003388AD /* Workout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -725,6 +749,7 @@
 				3B3C90192AC420450058BDDD /* ReminderTimelineProvider.swift in Sources */,
 				3B4B52AD2AC40E8C003388AD /* WeatherWidgetView.swift in Sources */,
 				3B4B52922AC40E76003388AD /* PhotoWidget.swift in Sources */,
+				3B3C90EB2ACA86F30058BDDD /* PedometerWidget.swift in Sources */,
 				3B4B52A52AC40E8C003388AD /* WeatherTimelineProvider.swift in Sources */,
 				3B3C90812AC5D3790058BDDD /* ExpenceCategory.swift in Sources */,
 				3B4B52B22AC40EA9003388AD /* WorkoutTimelineProvider.swift in Sources */,
@@ -736,6 +761,7 @@
 				3B3C90B02AC97FB20058BDDD /* StockService.swift in Sources */,
 				3B3C907F2AC5CFF10058BDDD /* Expense.intentdefinition in Sources */,
 				3B4B52892AC40E5F003388AD /* QuotesTimelineProvider.swift in Sources */,
+				3B3C90E32ACA84350058BDDD /* PedometerEntry.swift in Sources */,
 				3B3C90872AC7D1EF0058BDDD /* ExpenseWidgetView.swift in Sources */,
 				3B4B52882AC40E5F003388AD /* QuotesWidgetEntry.swift in Sources */,
 				3B3C90792AC57FCA0058BDDD /* ColorWidgetTimelineProvider.swift in Sources */,
@@ -763,6 +789,7 @@
 				3B4B52A62AC40E8C003388AD /* WeatherResponse.swift in Sources */,
 				3B3C90A32AC9281C0058BDDD /* ExchangeRateEntry.swift in Sources */,
 				3B3C90A92AC932860058BDDD /* ExchangeRateWidget.swift in Sources */,
+				3B3C90E92ACA85E90058BDDD /* PedometerTimelineProvider.swift in Sources */,
 				3B4B52A72AC40E8C003388AD /* WeatherService.swift in Sources */,
 				3B4B52962AC40E76003388AD /* PhotoWidgetEntry.swift in Sources */,
 				3B4B52A32AC40E8C003388AD /* WeatherView.swift in Sources */,
@@ -778,6 +805,7 @@
 				3B4B52A92AC40E8C003388AD /* WeatherUtil.swift in Sources */,
 				3B3C90A52AC92E530058BDDD /* ExchangeRateEntryView.swift in Sources */,
 				3B4B52AB2AC40E8C003388AD /* WeatherWidget.swift in Sources */,
+				3B3C90E52ACA84C10058BDDD /* PedometerEntryView.swift in Sources */,
 				3B4B52942AC40E76003388AD /* NetworkWidgetView.swift in Sources */,
 				3B4B52602AC40DC7003388AD /* WidgetKitExtensionBundle.swift in Sources */,
 				3B4B52952AC40E76003388AD /* PhotoWidgetView.swift in Sources */,

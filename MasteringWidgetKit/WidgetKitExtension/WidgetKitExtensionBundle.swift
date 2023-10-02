@@ -11,15 +11,13 @@ import SwiftUI
 @main
 struct WidgetKitExtensionBundle: WidgetBundle {
     var body: some Widget {
+        PedometerWidget()
         StockWidget()
         ExchangeRateWidget()
         ExpenseWidget()
         ColorWidget()
         TodayWidget()
         QuotesWidget()
-        PhotoWidget()
-        WeatherWidget()
-        WorkoutWidget()
         WidgetKitExtensionSubbundle().body
     }
 }
@@ -27,6 +25,9 @@ struct WidgetKitExtensionBundle: WidgetBundle {
 ///数が増えすぎたのでいくつかサブバンドルへ移す
 struct WidgetKitExtensionSubbundle: WidgetBundle {
     var body: some Widget {
+        PhotoWidget()
+        WeatherWidget()
+        WorkoutWidget()
         ReminderWidget()
         HelloStaticWidget()
     }

@@ -8,7 +8,7 @@
 import SwiftUI
 import WidgetKit
 
-struct PedometerTimelineEntry:TimelineEntry{
+struct PedometerEntry:TimelineEntry{
     let date = Date()
     let steps: Int
 }

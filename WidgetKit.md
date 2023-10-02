@@ -110,6 +110,10 @@ struct SampleWidjet: Widget {
 Appのtarget - Info - Privacy - Motion Usage Descriptionを追加 - Using motion to count steps等の説明文を追加
 3. 歩数計のデータモデル作る
 4. 歩数データを管理してデータを取得するManagerクラス作る
+5. 定数ファイル作る
+6. App用のビューを作る
+7. ウィジェット作る
+
 
 
 ///歩数計のデータモデル

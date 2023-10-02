@@ -14,7 +14,9 @@ struct ReminderView: View {
     @State private var reminders = [Reminder]()
     @State private var newReminder = ""
     
-    ///共有用のユーザーデフォルト
+    //共有用のユーザーデフォルト
+    //suiteNameにはApp Groupの名前を指定
+    //suiteNameを使用することで、ウィジェットとホストアプリ間でUserDefaultsのデータを共有が可能になる
     @AppStorage(ReminderAppConstants.storageKey, store: UserDefaults(suiteName: ReminderAppConstants.appGroupName))
     private var reminderStorage: Int = 0
     

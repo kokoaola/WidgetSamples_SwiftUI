@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ExchangeRateApp()
+         PedometerView()
 //        VStack {
 //            Image(systemName: "globe")
 //                .imageScale(.large)
