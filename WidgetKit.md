@@ -104,7 +104,15 @@ struct SampleWidjet: Widget {
 4. Intentハンドラー
     - Intentハンドラーを自動生成されたxxxxConfigrationIntentHandlingプロトコルに準拠させる
 
+###  ユーザーの歩数を取得する
+1. 最初の導入済ませる、グループ作成する
+2. モーション使用の説明(ユーザーに許可を得る時のダイアログに表示されるやつ)とIPリストを追加する
+Appのtarget - Info - Privacy - Motion Usage Descriptionを追加 - Using motion to count steps等の説明文を追加
+3. 歩数計のデータモデル作る
+4. 歩数データを管理してデータを取得するManagerクラス作る
 
+
+///歩数計のデータモデル
 
 
 ## memo
@@ -120,57 +128,3 @@ struct SampleWidjet: Widget {
   }
 ```
 
-
-
-3. 数字付きリスト3
-
-1. 数字付きリスト1
-2. 数字付きリスト2
-3. 数字付きリスト3
-
-**太字**、*斜体*、~~取り消し線~~
-
-区切り線
---- 
-___
-***
-
-```
-function test() {
-  console.log("notice the blank line before this function?");
-}
-```
-
-[リンクのテキスト](http://example.com)
-
->>>>>>Hello World
-
-
-- [ ] タスク1
-- [x] タスク2
-
-
-```ruby:ファイル名
-puts 'The best way to log and share programmers knowledge.'
-```
-
-| Head | Head | Head |
-| ---- | ---- | ---- |
-| Text | Text | Text |
-| Text | Text | Text |
-
-> 引用文
-> 引用文
-
-:::message
-メッセージをここに
-:::
-
-:::message alert
-警告メッセージをここに
-:::
-
-### アコーディオン（トグル）
-:::details タイトル
-表示したい内容
-:::

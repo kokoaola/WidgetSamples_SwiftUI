@@ -32,6 +32,10 @@
 - ゲージとユーザーが表示させるウィジェットの内容をを決められる
 - Intent定義ファイルを使用
 - TimelineProviderはIntentTimelineProviderを使用することに注意
+### Pedometer
+- ユーザーが過去 24 時間に実行した歩数を表示するアプリ
+- コアモーションで歩数データを取得する
+
 
 ## CoreDataAndWidgetプロジェクト
 - App側のコアデータと連動できるウィジェット（合計データ数を取得する）

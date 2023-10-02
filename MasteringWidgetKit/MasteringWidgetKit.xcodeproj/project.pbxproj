@@ -60,6 +60,12 @@
 		3B3C90CF2AC9D2D50058BDDD /* StockWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90CE2AC9D2D50058BDDD /* StockWidgetEntryView.swift */; };
 		3B3C90D12AC9D4A90058BDDD /* StockTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90D02AC9D4A90058BDDD /* StockTimelineProvider.swift */; };
 		3B3C90D32AC9D5FE0058BDDD /* StockWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90D22AC9D5FE0058BDDD /* StockWidget.swift */; };
+		3B3C90D62ACA765E0058BDDD /* Pedometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90D52ACA765E0058BDDD /* Pedometer.swift */; };
+		3B3C90D72ACA765E0058BDDD /* Pedometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90D52ACA765E0058BDDD /* Pedometer.swift */; };
+		3B3C90D92ACA78C30058BDDD /* PedometermManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90D82ACA78C30058BDDD /* PedometermManager.swift */; };
+		3B3C90DA2ACA78C30058BDDD /* PedometermManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90D82ACA78C30058BDDD /* PedometermManager.swift */; };
+		3B3C90DC2ACA7CDB0058BDDD /* PedometerAppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90DB2ACA7CDB0058BDDD /* PedometerAppConstants.swift */; };
+		3B3C90DD2ACA7CDB0058BDDD /* PedometerAppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90DB2ACA7CDB0058BDDD /* PedometerAppConstants.swift */; };
 		3B4B52472AC40D59003388AD /* MasteringWidgetKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4B52462AC40D59003388AD /* MasteringWidgetKitApp.swift */; };
 		3B4B52492AC40D59003388AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4B52482AC40D59003388AD /* ContentView.swift */; };
 		3B4B524B2AC40D5A003388AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B524A2AC40D5A003388AD /* Assets.xcassets */; };
@@ -183,6 +189,9 @@
 		3B3C90CE2AC9D2D50058BDDD /* StockWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockWidgetEntryView.swift; sourceTree = "<group>"; };
 		3B3C90D02AC9D4A90058BDDD /* StockTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTimelineProvider.swift; sourceTree = "<group>"; };
 		3B3C90D22AC9D5FE0058BDDD /* StockWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockWidget.swift; sourceTree = "<group>"; };
+		3B3C90D52ACA765E0058BDDD /* Pedometer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pedometer.swift; sourceTree = "<group>"; };
+		3B3C90D82ACA78C30058BDDD /* PedometermManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometermManager.swift; sourceTree = "<group>"; };
+		3B3C90DB2ACA7CDB0058BDDD /* PedometerAppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerAppConstants.swift; sourceTree = "<group>"; };
 		3B4B52432AC40D59003388AD /* MasteringWidgetKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasteringWidgetKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4B52462AC40D59003388AD /* MasteringWidgetKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasteringWidgetKitApp.swift; sourceTree = "<group>"; };
 		3B4B52482AC40D59003388AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -356,6 +365,16 @@
 			path = CustomStockIntent;
 			sourceTree = "<group>";
 		};
+		3B3C90D42ACA75FF0058BDDD /* Pedometer */ = {
+			isa = PBXGroup;
+			children = (
+				3B3C90D52ACA765E0058BDDD /* Pedometer.swift */,
+				3B3C90D82ACA78C30058BDDD /* PedometermManager.swift */,
+				3B3C90DB2ACA7CDB0058BDDD /* PedometerAppConstants.swift */,
+			);
+			path = Pedometer;
+			sourceTree = "<group>";
+		};
 		3B4B523A2AC40D59003388AD = {
 			isa = PBXGroup;
 			children = (
@@ -392,6 +411,7 @@
 		3B4B52452AC40D59003388AD /* MasteringWidgetKit */ = {
 			isa = PBXGroup;
 			children = (
+				3B3C90D42ACA75FF0058BDDD /* Pedometer */,
 				3B3C908C2AC84B810058BDDD /* ExchangeRateApp */,
 				3B3C90AA2AC97A280058BDDD /* StockApp */,
 				3B3C90732AC5794B0058BDDD /* Info.plist */,
@@ -669,16 +689,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B3C90952AC862C70058BDDD /* ExchangeRateService.swift in Sources */,
+				3B3C90D92ACA78C30058BDDD /* PedometermManager.swift in Sources */,
 				3B3C90A12AC924590058BDDD /* ExchangeRateApp.swift in Sources */,
 				3B3C908F2AC84CC60058BDDD /* Contry.swift in Sources */,
 				3B3C90B62AC9C0400058BDDD /* StockIntent.intentdefinition in Sources */,
 				3B3C90102AC4177F0058BDDD /* ReminderAppConstants.swift in Sources */,
+				3B3C90DC2ACA7CDB0058BDDD /* PedometerAppConstants.swift in Sources */,
 				3B3C901E2AC43CB70058BDDD /* Reminder.swift in Sources */,
 				3B3C90CD2AC9D2400058BDDD /* IntentHandler.swift in Sources */,
 				3B4B52492AC40D59003388AD /* ContentView.swift in Sources */,
 				3B4B52C22AC40F4E003388AD /* ReminderView.swift in Sources */,
 				3B3C90982AC86E810058BDDD /* CountryListCell.swift in Sources */,
 				3B4B52472AC40D59003388AD /* MasteringWidgetKitApp.swift in Sources */,
+				3B3C90D62ACA765E0058BDDD /* Pedometer.swift in Sources */,
 				3B3C90B32AC9BB250058BDDD /* StockView.swift in Sources */,
 				3B3C909B2AC871210058BDDD /* CountryExchangeRateView.swift in Sources */,
 				3B3C90AC2AC97B8C0058BDDD /* Stock.swift in Sources */,
@@ -706,6 +729,7 @@
 				3B3C90812AC5D3790058BDDD /* ExpenceCategory.swift in Sources */,
 				3B4B52B22AC40EA9003388AD /* WorkoutTimelineProvider.swift in Sources */,
 				3B4B52BB2AC40ED2003388AD /* WorkoutView.swift in Sources */,
+				3B3C90DD2ACA7CDB0058BDDD /* PedometerAppConstants.swift in Sources */,
 				3B4B52872AC40E5F003388AD /* Qoutes.swift in Sources */,
 				3B4B52722AC40E2D003388AD /* HelloWidgetEntry.swift in Sources */,
 				3B3C90932AC854840058BDDD /* ExchangeRate.swift in Sources */,
@@ -733,6 +757,7 @@
 				3B4B52B32AC40EA9003388AD /* WorkoutEntry.swift in Sources */,
 				3B3C90722AC578EA0058BDDD /* ColorSelection.intentdefinition in Sources */,
 				3B3C90152AC41B4D0058BDDD /* ReminderWidgetEntry.swift in Sources */,
+				3B3C90DA2ACA78C30058BDDD /* PedometermManager.swift in Sources */,
 				3B3C90CC2AC9D2390058BDDD /* StockSymbolEntry.swift in Sources */,
 				3B3C90D32AC9D5FE0058BDDD /* StockWidget.swift in Sources */,
 				3B4B52A62AC40E8C003388AD /* WeatherResponse.swift in Sources */,
@@ -742,6 +767,7 @@
 				3B4B52962AC40E76003388AD /* PhotoWidgetEntry.swift in Sources */,
 				3B4B52A32AC40E8C003388AD /* WeatherView.swift in Sources */,
 				3B4B52A82AC40E8C003388AD /* WeatherConstants.swift in Sources */,
+				3B3C90D72ACA765E0058BDDD /* Pedometer.swift in Sources */,
 				3B3C90B72AC9C0400058BDDD /* StockIntent.intentdefinition in Sources */,
 				3B3C90AD2AC97B8C0058BDDD /* Stock.swift in Sources */,
 				3B4B52742AC40E2D003388AD /* HelloWidgetTimelineProvider.swift in Sources */,
@@ -963,6 +989,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MasteringWidgetKit/Info.plist;
+				INFOPLIST_KEY_NSMotionUsageDescription = "Using motion to count steps";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -995,6 +1022,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MasteringWidgetKit/Info.plist;
+				INFOPLIST_KEY_NSMotionUsageDescription = "Using motion to count steps";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
