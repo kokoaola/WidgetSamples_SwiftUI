@@ -41,6 +41,25 @@
 		3B3C90A12AC924590058BDDD /* ExchangeRateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90A02AC924590058BDDD /* ExchangeRateApp.swift */; };
 		3B3C90A32AC9281C0058BDDD /* ExchangeRateEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90A22AC9281C0058BDDD /* ExchangeRateEntry.swift */; };
 		3B3C90A52AC92E530058BDDD /* ExchangeRateEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90A42AC92E530058BDDD /* ExchangeRateEntryView.swift */; };
+		3B3C90A72AC9316A0058BDDD /* ExchangeRateTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90A62AC9316A0058BDDD /* ExchangeRateTimelineProvider.swift */; };
+		3B3C90A92AC932860058BDDD /* ExchangeRateWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90A82AC932860058BDDD /* ExchangeRateWidget.swift */; };
+		3B3C90AC2AC97B8C0058BDDD /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90AB2AC97B8C0058BDDD /* Stock.swift */; };
+		3B3C90AD2AC97B8C0058BDDD /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90AB2AC97B8C0058BDDD /* Stock.swift */; };
+		3B3C90AF2AC97FB20058BDDD /* StockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90AE2AC97FB20058BDDD /* StockService.swift */; };
+		3B3C90B02AC97FB20058BDDD /* StockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90AE2AC97FB20058BDDD /* StockService.swift */; };
+		3B3C90B32AC9BB250058BDDD /* StockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90B22AC9BB250058BDDD /* StockView.swift */; };
+		3B3C90B62AC9C0400058BDDD /* StockIntent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90B52AC9C0400058BDDD /* StockIntent.intentdefinition */; };
+		3B3C90B72AC9C0400058BDDD /* StockIntent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90B52AC9C0400058BDDD /* StockIntent.intentdefinition */; };
+		3B3C90BE2AC9C5780058BDDD /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3C90BD2AC9C5780058BDDD /* Intents.framework */; };
+		3B3C90C12AC9C5780058BDDD /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90C02AC9C5780058BDDD /* IntentHandler.swift */; };
+		3B3C90C52AC9C5780058BDDD /* CustomStockIntent.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3B3C90BC2AC9C5780058BDDD /* CustomStockIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3B3C90C92AC9C5C60058BDDD /* StockIntent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90B52AC9C0400058BDDD /* StockIntent.intentdefinition */; };
+		3B3C90CA2AC9D0CE0058BDDD /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90C02AC9C5780058BDDD /* IntentHandler.swift */; };
+		3B3C90CC2AC9D2390058BDDD /* StockSymbolEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90CB2AC9D2390058BDDD /* StockSymbolEntry.swift */; };
+		3B3C90CD2AC9D2400058BDDD /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90C02AC9C5780058BDDD /* IntentHandler.swift */; };
+		3B3C90CF2AC9D2D50058BDDD /* StockWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90CE2AC9D2D50058BDDD /* StockWidgetEntryView.swift */; };
+		3B3C90D12AC9D4A90058BDDD /* StockTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90D02AC9D4A90058BDDD /* StockTimelineProvider.swift */; };
+		3B3C90D32AC9D5FE0058BDDD /* StockWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C90D22AC9D5FE0058BDDD /* StockWidget.swift */; };
 		3B4B52472AC40D59003388AD /* MasteringWidgetKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4B52462AC40D59003388AD /* MasteringWidgetKitApp.swift */; };
 		3B4B52492AC40D59003388AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4B52482AC40D59003388AD /* ContentView.swift */; };
 		3B4B524B2AC40D5A003388AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B524A2AC40D5A003388AD /* Assets.xcassets */; };
@@ -92,6 +111,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3B3C90C32AC9C5780058BDDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B4B523B2AC40D59003388AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B3C90BB2AC9C5780058BDDD;
+			remoteInfo = CustomStockIntent;
+		};
 		3B4B52662AC40DC8003388AD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3B4B523B2AC40D59003388AD /* Project object */;
@@ -108,6 +134,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				3B3C90C52AC9C5780058BDDD /* CustomStockIntent.appex in Embed Foundation Extensions */,
 				3B4B52682AC40DC8003388AD /* WidgetKitExtensionExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
@@ -142,6 +169,20 @@
 		3B3C90A02AC924590058BDDD /* ExchangeRateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateApp.swift; sourceTree = "<group>"; };
 		3B3C90A22AC9281C0058BDDD /* ExchangeRateEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateEntry.swift; sourceTree = "<group>"; };
 		3B3C90A42AC92E530058BDDD /* ExchangeRateEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateEntryView.swift; sourceTree = "<group>"; };
+		3B3C90A62AC9316A0058BDDD /* ExchangeRateTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateTimelineProvider.swift; sourceTree = "<group>"; };
+		3B3C90A82AC932860058BDDD /* ExchangeRateWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateWidget.swift; sourceTree = "<group>"; };
+		3B3C90AB2AC97B8C0058BDDD /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		3B3C90AE2AC97FB20058BDDD /* StockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockService.swift; sourceTree = "<group>"; };
+		3B3C90B22AC9BB250058BDDD /* StockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockView.swift; sourceTree = "<group>"; };
+		3B3C90B52AC9C0400058BDDD /* StockIntent.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = StockIntent.intentdefinition; sourceTree = "<group>"; };
+		3B3C90BC2AC9C5780058BDDD /* CustomStockIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CustomStockIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B3C90BD2AC9C5780058BDDD /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		3B3C90C02AC9C5780058BDDD /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		3B3C90C22AC9C5780058BDDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B3C90CB2AC9D2390058BDDD /* StockSymbolEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockSymbolEntry.swift; sourceTree = "<group>"; };
+		3B3C90CE2AC9D2D50058BDDD /* StockWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockWidgetEntryView.swift; sourceTree = "<group>"; };
+		3B3C90D02AC9D4A90058BDDD /* StockTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTimelineProvider.swift; sourceTree = "<group>"; };
+		3B3C90D22AC9D5FE0058BDDD /* StockWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockWidget.swift; sourceTree = "<group>"; };
 		3B4B52432AC40D59003388AD /* MasteringWidgetKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasteringWidgetKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4B52462AC40D59003388AD /* MasteringWidgetKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasteringWidgetKitApp.swift; sourceTree = "<group>"; };
 		3B4B52482AC40D59003388AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -196,6 +237,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3B3C90B92AC9C5780058BDDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B3C90BE2AC9C5780058BDDD /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3B4B52402AC40D59003388AD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -252,7 +301,7 @@
 			path = ExpenseWidget;
 			sourceTree = "<group>";
 		};
-		3B3C908C2AC84B810058BDDD /*  ExchangeRateApp */ = {
+		3B3C908C2AC84B810058BDDD /* ExchangeRateApp */ = {
 			isa = PBXGroup;
 			children = (
 				3B3C908E2AC84CC60058BDDD /* Contry.swift */,
@@ -262,7 +311,7 @@
 				3B3C90A02AC924590058BDDD /* ExchangeRateApp.swift */,
 				3B3C909A2AC871210058BDDD /* CountryExchangeRateView.swift */,
 			);
-			path = " ExchangeRateApp";
+			path = ExchangeRateApp;
 			sourceTree = "<group>";
 		};
 		3B3C908D2AC84BE10058BDDD /* ExchangeRateWidget */ = {
@@ -270,8 +319,41 @@
 			children = (
 				3B3C90A22AC9281C0058BDDD /* ExchangeRateEntry.swift */,
 				3B3C90A42AC92E530058BDDD /* ExchangeRateEntryView.swift */,
+				3B3C90A62AC9316A0058BDDD /* ExchangeRateTimelineProvider.swift */,
+				3B3C90A82AC932860058BDDD /* ExchangeRateWidget.swift */,
 			);
 			path = ExchangeRateWidget;
+			sourceTree = "<group>";
+		};
+		3B3C90AA2AC97A280058BDDD /* StockApp */ = {
+			isa = PBXGroup;
+			children = (
+				3B3C90AB2AC97B8C0058BDDD /* Stock.swift */,
+				3B3C90AE2AC97FB20058BDDD /* StockService.swift */,
+				3B3C90B22AC9BB250058BDDD /* StockView.swift */,
+			);
+			path = StockApp;
+			sourceTree = "<group>";
+		};
+		3B3C90B42AC9BEAF0058BDDD /* StocksWidget */ = {
+			isa = PBXGroup;
+			children = (
+				3B3C90B52AC9C0400058BDDD /* StockIntent.intentdefinition */,
+				3B3C90CB2AC9D2390058BDDD /* StockSymbolEntry.swift */,
+				3B3C90CE2AC9D2D50058BDDD /* StockWidgetEntryView.swift */,
+				3B3C90D02AC9D4A90058BDDD /* StockTimelineProvider.swift */,
+				3B3C90D22AC9D5FE0058BDDD /* StockWidget.swift */,
+			);
+			path = StocksWidget;
+			sourceTree = "<group>";
+		};
+		3B3C90BF2AC9C5780058BDDD /* CustomStockIntent */ = {
+			isa = PBXGroup;
+			children = (
+				3B3C90C02AC9C5780058BDDD /* IntentHandler.swift */,
+				3B3C90C22AC9C5780058BDDD /* Info.plist */,
+			);
+			path = CustomStockIntent;
 			sourceTree = "<group>";
 		};
 		3B4B523A2AC40D59003388AD = {
@@ -290,6 +372,8 @@
 				3B3C906F2AC578760058BDDD /* ColorWidget */,
 				3B3C907C2AC5CFB50058BDDD /* ExpenseWidget */,
 				3B3C908D2AC84BE10058BDDD /* ExchangeRateWidget */,
+				3B3C90B42AC9BEAF0058BDDD /* StocksWidget */,
+				3B3C90BF2AC9C5780058BDDD /* CustomStockIntent */,
 				3B4B52592AC40DC7003388AD /* Frameworks */,
 				3B4B52442AC40D59003388AD /* Products */,
 			);
@@ -300,6 +384,7 @@
 			children = (
 				3B4B52432AC40D59003388AD /* MasteringWidgetKit.app */,
 				3B4B52582AC40DC7003388AD /* WidgetKitExtensionExtension.appex */,
+				3B3C90BC2AC9C5780058BDDD /* CustomStockIntent.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -307,12 +392,13 @@
 		3B4B52452AC40D59003388AD /* MasteringWidgetKit */ = {
 			isa = PBXGroup;
 			children = (
+				3B3C908C2AC84B810058BDDD /* ExchangeRateApp */,
+				3B3C90AA2AC97A280058BDDD /* StockApp */,
 				3B3C90732AC5794B0058BDDD /* Info.plist */,
 				3B4B52BC2AC40F17003388AD /* MasteringWidgetKit.entitlements */,
 				3B4B52462AC40D59003388AD /* MasteringWidgetKitApp.swift */,
 				3B4B52482AC40D59003388AD /* ContentView.swift */,
 				3B4B524A2AC40D5A003388AD /* Assets.xcassets */,
-				3B3C908C2AC84B810058BDDD /*  ExchangeRateApp */,
 				3B4B524C2AC40D5A003388AD /* Preview Content */,
 			);
 			path = MasteringWidgetKit;
@@ -331,6 +417,7 @@
 			children = (
 				3B4B525A2AC40DC7003388AD /* WidgetKit.framework */,
 				3B4B525C2AC40DC7003388AD /* SwiftUI.framework */,
+				3B3C90BD2AC9C5780058BDDD /* Intents.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -400,8 +487,8 @@
 			children = (
 				3B4B52982AC40E8C003388AD /* WeatherView.swift */,
 				3B4B52992AC40E8C003388AD /* WeatherEntry.swift */,
-				3B4B529A2AC40E8C003388AD /* WeatherTimelineProvider.swift */,
 				3B4B529B2AC40E8C003388AD /* WeatherResponse.swift */,
+				3B4B529A2AC40E8C003388AD /* WeatherTimelineProvider.swift */,
 				3B4B529C2AC40E8C003388AD /* WeatherService.swift */,
 				3B4B529D2AC40E8C003388AD /* WeatherConstants.swift */,
 				3B4B529E2AC40E8C003388AD /* WeatherUtil.swift */,
@@ -445,6 +532,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3B3C90BB2AC9C5780058BDDD /* CustomStockIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B3C90C62AC9C5780058BDDD /* Build configuration list for PBXNativeTarget "CustomStockIntent" */;
+			buildPhases = (
+				3B3C90B82AC9C5780058BDDD /* Sources */,
+				3B3C90B92AC9C5780058BDDD /* Frameworks */,
+				3B3C90BA2AC9C5780058BDDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomStockIntent;
+			productName = CustomStockIntent;
+			productReference = 3B3C90BC2AC9C5780058BDDD /* CustomStockIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		3B4B52422AC40D59003388AD /* MasteringWidgetKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B4B52512AC40D5A003388AD /* Build configuration list for PBXNativeTarget "MasteringWidgetKit" */;
@@ -458,6 +562,7 @@
 			);
 			dependencies = (
 				3B4B52672AC40DC8003388AD /* PBXTargetDependency */,
+				3B3C90C42AC9C5780058BDDD /* PBXTargetDependency */,
 			);
 			name = MasteringWidgetKit;
 			productName = MasteringWidgetKit;
@@ -491,6 +596,9 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					3B3C90BB2AC9C5780058BDDD = {
+						CreatedOnToolsVersion = 14.3;
+					};
 					3B4B52422AC40D59003388AD = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -514,11 +622,19 @@
 			targets = (
 				3B4B52422AC40D59003388AD /* MasteringWidgetKit */,
 				3B4B52572AC40DC7003388AD /* WidgetKitExtensionExtension */,
+				3B3C90BB2AC9C5780058BDDD /* CustomStockIntent */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3B3C90BA2AC9C5780058BDDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3B4B52412AC40D59003388AD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -539,6 +655,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3B3C90B82AC9C5780058BDDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B3C90C12AC9C5780058BDDD /* IntentHandler.swift in Sources */,
+				3B3C90C92AC9C5C60058BDDD /* StockIntent.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3B4B523F2AC40D59003388AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -546,13 +671,18 @@
 				3B3C90952AC862C70058BDDD /* ExchangeRateService.swift in Sources */,
 				3B3C90A12AC924590058BDDD /* ExchangeRateApp.swift in Sources */,
 				3B3C908F2AC84CC60058BDDD /* Contry.swift in Sources */,
+				3B3C90B62AC9C0400058BDDD /* StockIntent.intentdefinition in Sources */,
 				3B3C90102AC4177F0058BDDD /* ReminderAppConstants.swift in Sources */,
 				3B3C901E2AC43CB70058BDDD /* Reminder.swift in Sources */,
+				3B3C90CD2AC9D2400058BDDD /* IntentHandler.swift in Sources */,
 				3B4B52492AC40D59003388AD /* ContentView.swift in Sources */,
 				3B4B52C22AC40F4E003388AD /* ReminderView.swift in Sources */,
 				3B3C90982AC86E810058BDDD /* CountryListCell.swift in Sources */,
 				3B4B52472AC40D59003388AD /* MasteringWidgetKitApp.swift in Sources */,
+				3B3C90B32AC9BB250058BDDD /* StockView.swift in Sources */,
 				3B3C909B2AC871210058BDDD /* CountryExchangeRateView.swift in Sources */,
+				3B3C90AC2AC97B8C0058BDDD /* Stock.swift in Sources */,
+				3B3C90AF2AC97FB20058BDDD /* StockService.swift in Sources */,
 				3B3C90712AC578EA0058BDDD /* ColorSelection.intentdefinition in Sources */,
 				3B3C907E2AC5CFF10058BDDD /* Expense.intentdefinition in Sources */,
 				3B4B52BA2AC40ED2003388AD /* WorkoutView.swift in Sources */,
@@ -579,6 +709,7 @@
 				3B4B52872AC40E5F003388AD /* Qoutes.swift in Sources */,
 				3B4B52722AC40E2D003388AD /* HelloWidgetEntry.swift in Sources */,
 				3B3C90932AC854840058BDDD /* ExchangeRate.swift in Sources */,
+				3B3C90B02AC97FB20058BDDD /* StockService.swift in Sources */,
 				3B3C907F2AC5CFF10058BDDD /* Expense.intentdefinition in Sources */,
 				3B4B52892AC40E5F003388AD /* QuotesTimelineProvider.swift in Sources */,
 				3B3C90872AC7D1EF0058BDDD /* ExpenseWidgetView.swift in Sources */,
@@ -589,22 +720,30 @@
 				3B3C907B2AC581B70058BDDD /* ColorWidget.swift in Sources */,
 				3B4B527C2AC40E46003388AD /* TodayWidget.swift in Sources */,
 				3B3C90772AC57BFC0058BDDD /* ColorWidgetView.swift in Sources */,
+				3B3C90A72AC9316A0058BDDD /* ExchangeRateTimelineProvider.swift in Sources */,
 				3B4B52AC2AC40E8C003388AD /* Weather.swift in Sources */,
 				3B4B52B42AC40EA9003388AD /* WorkoutWidget.swift in Sources */,
+				3B3C90D12AC9D4A90058BDDD /* StockTimelineProvider.swift in Sources */,
 				3B4B52622AC40DC7003388AD /* WidgetKitExtension.swift in Sources */,
 				3B3C90902AC84CC60058BDDD /* Contry.swift in Sources */,
+				3B3C90CA2AC9D0CE0058BDDD /* IntentHandler.swift in Sources */,
 				3B3C90992AC86E810058BDDD /* CountryListCell.swift in Sources */,
 				3B4B527D2AC40E46003388AD /* TodayWidgetTimelineProvider.swift in Sources */,
 				3B3C90172AC41BD90058BDDD /* ReminderWidgetView.swift in Sources */,
 				3B4B52B32AC40EA9003388AD /* WorkoutEntry.swift in Sources */,
 				3B3C90722AC578EA0058BDDD /* ColorSelection.intentdefinition in Sources */,
 				3B3C90152AC41B4D0058BDDD /* ReminderWidgetEntry.swift in Sources */,
+				3B3C90CC2AC9D2390058BDDD /* StockSymbolEntry.swift in Sources */,
+				3B3C90D32AC9D5FE0058BDDD /* StockWidget.swift in Sources */,
 				3B4B52A62AC40E8C003388AD /* WeatherResponse.swift in Sources */,
 				3B3C90A32AC9281C0058BDDD /* ExchangeRateEntry.swift in Sources */,
+				3B3C90A92AC932860058BDDD /* ExchangeRateWidget.swift in Sources */,
 				3B4B52A72AC40E8C003388AD /* WeatherService.swift in Sources */,
 				3B4B52962AC40E76003388AD /* PhotoWidgetEntry.swift in Sources */,
 				3B4B52A32AC40E8C003388AD /* WeatherView.swift in Sources */,
 				3B4B52A82AC40E8C003388AD /* WeatherConstants.swift in Sources */,
+				3B3C90B72AC9C0400058BDDD /* StockIntent.intentdefinition in Sources */,
+				3B3C90AD2AC97B8C0058BDDD /* Stock.swift in Sources */,
 				3B4B52742AC40E2D003388AD /* HelloWidgetTimelineProvider.swift in Sources */,
 				3B3C90832AC5D5EC0058BDDD /* ExpenseEntry.swift in Sources */,
 				3B4B52AA2AC40E8C003388AD /* DailyWeatherView.swift in Sources */,
@@ -617,6 +756,7 @@
 				3B4B52602AC40DC7003388AD /* WidgetKitExtensionBundle.swift in Sources */,
 				3B4B52952AC40E76003388AD /* PhotoWidgetView.swift in Sources */,
 				3B4B528A2AC40E5F003388AD /* QuoteWidget.swift in Sources */,
+				3B3C90CF2AC9D2D50058BDDD /* StockWidgetEntryView.swift in Sources */,
 				3B4B52752AC40E2D003388AD /* HelloStaticWidget.swift in Sources */,
 				3B4B527B2AC40E46003388AD /* TodayWidgetView.swift in Sources */,
 				3B4B527E2AC40E46003388AD /* TodayWidgetEntry.swift in Sources */,
@@ -632,6 +772,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3B3C90C42AC9C5780058BDDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B3C90BB2AC9C5780058BDDD /* CustomStockIntent */;
+			targetProxy = 3B3C90C32AC9C5780058BDDD /* PBXContainerItemProxy */;
+		};
 		3B4B52672AC40DC8003388AD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3B4B52572AC40DC7003388AD /* WidgetKitExtensionExtension */;
@@ -640,6 +785,56 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		3B3C90C72AC9C5780058BDDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6CBTWMSXBM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CustomStockIntent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CustomStockIntent;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = amatnug.amatnug.MasteringWidgetKit.CustomStockIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B3C90C82AC9C5780058BDDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6CBTWMSXBM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CustomStockIntent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CustomStockIntent;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = amatnug.amatnug.MasteringWidgetKit.CustomStockIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		3B4B524F2AC40D5A003388AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -877,6 +1072,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3B3C90C62AC9C5780058BDDD /* Build configuration list for PBXNativeTarget "CustomStockIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B3C90C72AC9C5780058BDDD /* Debug */,
+				3B3C90C82AC9C5780058BDDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3B4B523E2AC40D59003388AD /* Build configuration list for PBXProject "MasteringWidgetKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

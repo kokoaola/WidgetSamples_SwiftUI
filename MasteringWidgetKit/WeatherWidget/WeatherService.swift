@@ -7,6 +7,8 @@
 
 import Foundation
 
+///APIエンドポイントを呼び出してJSON応答を取得するサービス構造体、関数
+///
 struct WeatherService{
     func getWeather() async throws -> [Weather]{
         let urlString = "https://api.lil.software/weather?latitude=40.71302914226243&longitude=-74.00606120853008"

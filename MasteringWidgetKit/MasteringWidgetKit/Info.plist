@@ -2,10 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleURLSchemes</key>
+	<string>sample</string>
 	<key>NSUserActivityTypes</key>
 	<array>
 		<string>ColorSelectionIntentIntent</string>
 		<string>MonthlyExpenseIntent</string>
+		<string>StockConfigrationIntent</string>
 	</array>
 </dict>
 </plist>

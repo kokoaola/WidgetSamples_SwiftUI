@@ -19,11 +19,19 @@
 - Appとウィジェット間のデータをUserdefaultsで共有する
 ### ColorWidget
 - ユーザーが背景色を決められる動的ウィジェット
+- Intent定義ファイルを使用
+- TimelineProviderはIntentTimelineProviderを使用することに注意
 ### ExpenseWidget
 - ゲージとユーザーが表示させるウィジェットの内容をを決められる動的ウィジェット
+- Intent定義ファイルを使用
+- TimelineProviderはIntentTimelineProviderを使用することに注意
 ### ExchangeRateWidget
 - ディープリンク（タップした時に表示させる内容を指定）
-
+### StockWidget
+- 株価をAPIで取得するウィジェット
+- ゲージとユーザーが表示させるウィジェットの内容をを決められる
+- Intent定義ファイルを使用
+- TimelineProviderはIntentTimelineProviderを使用することに注意
 
 ## CoreDataAndWidgetプロジェクト
 - App側のコアデータと連動できるウィジェット（合計データ数を取得する）
