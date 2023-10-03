@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-         PedometerView()
+        FocusTimerAppView()
+//         PedometerView()
 //        VStack {
 //            Image(systemName: "globe")
 //                .imageScale(.large)

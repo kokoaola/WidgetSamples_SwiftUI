@@ -8,13 +8,18 @@
 import SwiftUI
 
 struct FamousPlaceMapWidgetView: View {
+    var entry: FamousPlaceMapEntry
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct FamousPlaceMapWidgetView_Previews: PreviewProvider {
-    static var previews: some View {
-        FamousPlaceMapWidgetView()
+        ZStack(alignment: .bottom) {
+            entry.famousPlace.image
+            Text(entry.famousPlace.name)
+            
+                .foregroundColor(.white)
+                .font(.caption.bold())
+                .frame(height: 20)
+                .frame(maxWidth: .infinity)
+                .background(Color.orange.gradient.opacity(0.6))
+        }
     }
 }

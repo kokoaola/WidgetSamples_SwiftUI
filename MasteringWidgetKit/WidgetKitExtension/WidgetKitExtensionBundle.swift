@@ -11,6 +11,7 @@ import SwiftUI
 @main
 struct WidgetKitExtensionBundle: WidgetBundle {
     var body: some Widget {
+        FamousPlaceMapWidget()
         PedometerWidget()
         StockWidget()
         ExchangeRateWidget()
@@ -30,5 +31,8 @@ struct WidgetKitExtensionSubbundle: WidgetBundle {
         WorkoutWidget()
         ReminderWidget()
         HelloStaticWidget()
+        if #available(iOS 16.1, *){
+            FocusTimerLiveWidget()
+        }
     }
 }

@@ -5,4 +5,10 @@
 //  Created by koala panda on 2023/10/03.
 //
 
-import Foundation
+import WidgetKit
+
+
+struct FamousPlaceMapEntry: TimelineEntry{
+    let date: Date
+    let famousPlace: FamousPlace
+}

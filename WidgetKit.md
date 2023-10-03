@@ -114,6 +114,17 @@ Appのtarget - Info - Privacy - Motion Usage Descriptionを追加 - Using motion
 6. App用のビューを作る
 7. ウィジェット作る
 
+###  ライブアクティビティ
+- AppのフォルダとWidgetのフォルダを追加
+- xxxxAttributes.swiftファイルを追加、ActivityKitをインポートしてAppとWidgetで共有したいデータ型を定義
+- bundlebについかするときはこれ
+```Swift
+if #available(iOS 16.1, *){
+            FocusTimerLiveWidget()
+        }
+```
+- AppのTargetのinfoにports Live Activitiesを追加して値をYESにする
+
 
 
 ///歩数計のデータモデル
