@@ -85,6 +85,7 @@
 		3B3C91062ACC25340058BDDD /* PizzaOrderAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C91042ACC25340058BDDD /* PizzaOrderAttributes.swift */; };
 		3B3C91082ACC26FB0058BDDD /* PizzaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C91072ACC26FB0058BDDD /* PizzaType.swift */; };
 		3B3C910A2ACC5C2B0058BDDD /* PizzaOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C91092ACC5C2B0058BDDD /* PizzaOrderView.swift */; };
+		3B3C910C2ACC64070058BDDD /* PizzaDeriveryWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C910B2ACC64070058BDDD /* PizzaDeriveryWidget.swift */; };
 		3B4B52472AC40D59003388AD /* MasteringWidgetKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4B52462AC40D59003388AD /* MasteringWidgetKitApp.swift */; };
 		3B4B52492AC40D59003388AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4B52482AC40D59003388AD /* ContentView.swift */; };
 		3B4B524B2AC40D5A003388AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B524A2AC40D5A003388AD /* Assets.xcassets */; };
@@ -228,6 +229,7 @@
 		3B3C91042ACC25340058BDDD /* PizzaOrderAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaOrderAttributes.swift; sourceTree = "<group>"; };
 		3B3C91072ACC26FB0058BDDD /* PizzaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaType.swift; sourceTree = "<group>"; };
 		3B3C91092ACC5C2B0058BDDD /* PizzaOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaOrderView.swift; sourceTree = "<group>"; };
+		3B3C910B2ACC64070058BDDD /* PizzaDeriveryWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaDeriveryWidget.swift; sourceTree = "<group>"; };
 		3B4B52432AC40D59003388AD /* MasteringWidgetKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasteringWidgetKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4B52462AC40D59003388AD /* MasteringWidgetKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasteringWidgetKitApp.swift; sourceTree = "<group>"; };
 		3B4B52482AC40D59003388AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -466,6 +468,7 @@
 		3B3C91032ACC22320058BDDD /* PizzaDerivaryWidget */ = {
 			isa = PBXGroup;
 			children = (
+				3B3C910B2ACC64070058BDDD /* PizzaDeriveryWidget.swift */,
 			);
 			path = PizzaDerivaryWidget;
 			sourceTree = "<group>";
@@ -845,6 +848,7 @@
 				3B3C90F62ACBD5D10058BDDD /* FamousPlaceMapWidget.swift in Sources */,
 				3B4B52872AC40E5F003388AD /* Qoutes.swift in Sources */,
 				3B4B52722AC40E2D003388AD /* HelloWidgetEntry.swift in Sources */,
+				3B3C910C2ACC64070058BDDD /* PizzaDeriveryWidget.swift in Sources */,
 				3B3C90932AC854840058BDDD /* ExchangeRate.swift in Sources */,
 				3B3C90B02AC97FB20058BDDD /* StockService.swift in Sources */,
 				3B3C907F2AC5CFF10058BDDD /* Expense.intentdefinition in Sources */,

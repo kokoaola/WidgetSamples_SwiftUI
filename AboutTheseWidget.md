@@ -43,8 +43,12 @@
 ###　Focus Timer
 - タイマーのライブウィジェット
 - AppのプロジェクトとWidgetのプロジェクト
+- ライブアクティビティ
 ### PizzaOrder
-- 注文されたピザの情報をLive ActivityでAppの最新情報をロック画面やDynamic Islandに表示す
+- 注文されたピザの情報をAppの最新情報をロック画面やDynamic Islandに表示す(Live Activity)
+- ライブアクティビティとダイナミックアイランド
+- ダイナミックアイランドにアイコンを表示させる
+- AppのプロジェクトとWidgetのプロジェクト
 
 ## CoreDataAndWidgetプロジェクト
 - App側のコアデータと連動できるウィジェット（合計データ数を取得する）

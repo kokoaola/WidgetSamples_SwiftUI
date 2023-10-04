@@ -126,6 +126,9 @@ if #available(iOS 16.1, *){
 - AppのTargetのinfoにports Live Activitiesを追加して値をYESにする
 
 
+###  ダイナミックアイランド
+- Widgetファイルでビューを構成するよ
+
 
 ///歩数計のデータモデル
 

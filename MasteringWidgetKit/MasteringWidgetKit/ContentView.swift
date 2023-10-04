@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        FocusTimerAppView()
+        PizzaOrderView()
+//        FocusTimerAppView()
 //         PedometerView()
 //        VStack {
 //            Image(systemName: "globe")

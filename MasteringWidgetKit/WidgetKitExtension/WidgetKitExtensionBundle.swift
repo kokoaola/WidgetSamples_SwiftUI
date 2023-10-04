@@ -33,6 +33,7 @@ struct WidgetKitExtensionSubbundle: WidgetBundle {
         HelloStaticWidget()
         if #available(iOS 16.1, *){
             FocusTimerLiveWidget()
+            PizzaDeriveryWidget()
         }
     }
 }
