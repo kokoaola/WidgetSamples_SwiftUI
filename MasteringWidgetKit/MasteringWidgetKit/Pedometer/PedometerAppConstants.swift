@@ -21,7 +21,7 @@ struct PedometerAppConstants{
     // Widgetの種類を一意に識別するための文字列
     static var widgetKind = "amatnug.amatnug.PedometerWidget"
     
-    // Widgetのタイムラインをリロードするための関数
+    // Widgetのタイムラインをリロードするための関数 更新
     static func reloadPedometerTimelines(){
         // WidgetCenterを使用して、指定したkindのWidgetのタイムラインをリロード
         WidgetCenter.shared.reloadTimelines(ofKind: Self.widgetKind)

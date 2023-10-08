@@ -63,7 +63,8 @@ struct SampleWidjet: Widget {
     - プロジェクトのTarget - signing& - +CapabilityからAppGroup(アプリ内の複数のターゲット間で通信とデータ共有をする)を検索してダブルクリック - AppGroupの＋から新しいグループを登録(バンドルID＋なにか) - ExtensionのTargetでもチェックを入れて同じグループを適用させる
     - 自動で作成されたExtension.entitlementsとProject.entitlementsで一緒のAppGroupが選ばれていることを確認する
 3. CoreData導入する
-    - 新しいグループ作る - 新規作成 - data modelを検索して選択 - targetはプロジェクトとエクステンション両方にチェックマークを入れる（アプリとウィジェットの両方がアクセスできるように）- 名前をつけてCreate
+    - 新しいグループ作る - 新規作成 - data modelを検索して選択 - targetはプロジェクトとエクステンション両方にチェックマークを入れる（アプリとウィジェットの両方がアクセスできるように）- 名前をつけてCreate　　
+  　**xxxx.xcdatamodeldのターゲットがプロジェクトとウィジェット両方になっていることを確認**
 4. アプリグループを使用してメインソースであるコアデータSQLファイル (SQLite ファイル)を作成
     - 定数用のxxxxConstants.swiftファイルを作成（targetはプロジェクトとエクステンション）
     - SwiftファイルCoreDataManager.swiftを作成（targetはプロジェクトとエクステンション）、コンテキストを作成する(詳細はCoreDataAndWidgetApp.swift)
@@ -75,7 +76,12 @@ struct SampleWidjet: Widget {
 7. ウィジェット作る
     - 「２つめ以降のウィジェットを１から自分で追加する」の手順と同様
     - getTimelineメソッドにCoreDataのコードを挿入する
-
+### 後から追加するとき
+1. アプリコンテナとグループの作成
+2. *xxxx.xcdatamodeldのtargetで、プロジェクトとエクステンション両方にチェックマークを入れる
+Constants.swiftファイルを追加
+Entry.swift、EntryView.swift、TimelineProvider.swift追加
+sqlファイルの引っ越し
 
 ## ユーザーがウィジェットに表示されるコンテンツを選択できるようにする（長押しで変更できる）
 1. 最初の導入済ませる
@@ -133,7 +139,7 @@ if #available(iOS 16.1, *){
 ///歩数計のデータモデル
 
 
-## memo
+## メモ
 - ユーザーが選択できるサイズを決めたい時
   ```Swift
   struct HelloStaticWidget: Widget {
@@ -146,3 +152,4 @@ if #available(iOS 16.1, *){
   }
 ```
 
+- ウィジェットの多言語化をしたいときは、  Localizable.stringsのTargetMembershipにウィジェットを追加する
