@@ -1,6 +1,7 @@
-# Mastering WidgetKit in SwiftUI 4, iOS 16 with Dynamic Islandで作ったもの
+# WidgetKitSampls
 
-## MasteringWidgetKitプロジェクト
+##作ったウィジェットについて
+
 ### SampleWidjet
 - 最初に作成するウィジェットの拡張機能。Bundleを持つ
 ### HelloStaticWidget
